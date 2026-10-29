@@ -22,7 +22,7 @@ The period is latched after the next address and CSH/CSL speed selection settle,
 so changing the menu option cannot shorten a cycle already waiting for memory.
 
 For Ninja Spirit, start with +20%, then compare +50% in the same busy scene.
-**Sprites per line → Extra** remains a separate flicker-reduction setting.
+**Sprites per line → Extra** remains a separate flicker-reduction setting and is enabled by default in the To the Limit revision. Normal is still selectable.
 If another game shows timing issues, return CPU Turbo to Off. Existing global
 core configuration saves can carry this selection into other games.
 
@@ -154,4 +154,9 @@ actual tool version and results.
 
 ## Hardware feedback and next default
 
-On 2026-10-29 the owner reported the +50% setting is working. The amount of gameplay improvement has not been measured. An isolated revision is being built with Extra sprites as the default using new status bit 41 (0=Extra, 1=Normal). Legacy status bit 11 is reserved and ignored, so old saved settings are not silently inverted. CPU Turbo remains default Off.
+On 2026-10-29 the owner reported the +50% setting is working. The amount of gameplay improvement has not been measured. The new revision enables Extra sprites by default using new status bit 41 (0=Extra, 1=Normal). See [its build report](BUILD_EXTRA.md). Legacy status bit 11 is reserved and ignored, so old saved settings are not silently inverted. CPU Turbo remains default Off.
+
+
+## Current download
+
+Use `TurboGrafx16_TTL_20261029.rbf` and matching `TurboGrafx16_TTL_20261029_source.zip` from the website downloads directory. Both full build/timing results and SHA-256 checksums are published. The new Extra-default binary has not yet been hardware tested.

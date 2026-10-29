@@ -11,4 +11,4 @@ git apply 0002-extra-default.patch
 
 The new sprite option is `P1o9` (32+9 = status bit 41). Extra is the first menu option and its hardware signal is `~status[41]`. It remains possible to select and save Normal.
 
-These focused patches cover production RTL only. Use the complete source archive for tests, build settings, Quartus 23 PLL QIP alias, host compatibility tooling and full upstream source/licenses. The initial binary does not contain patch 0002; an updated binary will be published after its build and timing checks finish.
+These focused patches cover production RTL only. Use the complete source archive for tests, build settings, Quartus 23 PLL QIP alias, host compatibility tooling and full upstream source/licenses. The initial `TurboGrafx16_20261029.rbf` does not contain patch 0002. The current `TurboGrafx16_TTL_20261029.rbf` includes both patches and passed its fresh build and constrained multi-corner timing checks.
