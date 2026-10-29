@@ -51,11 +51,23 @@ fb=FontBuilder(1000,isTTF=True);order=['.notdef']+[f'u{ord(c):04X}' for c in pat
 glyphs={};metrics={}
 for c,rows in [('\0',['11111','10001','10101','10101','10101','10001','11111'])]+list(patterns.items()):
  name='.notdef' if c=='\0' else f'u{ord(c):04X}';pen=TTGlyphPen(None)
+ edges=set()
  for y,row in enumerate(rows):
   for x,v in enumerate(row):
    if v=='1':
     left=x*100;bottom=(6-y)*100
-    pen.moveTo((left,bottom));pen.lineTo((left+100,bottom));pen.lineTo((left+100,bottom+100));pen.lineTo((left,bottom+100));pen.closePath()
+    points=[(left,bottom),(left+100,bottom),(left+100,bottom+100),(left,bottom+100)]
+    for start,end in zip(points,points[1:]+points[:1]):
+     if (end,start) in edges:edges.remove((end,start))
+     else:edges.add((start,end))
+ while edges:
+  start,end=edges.pop();contour=[start,end]
+  while end!=start:
+   next_edge=next(edge for edge in edges if edge[0]==end)
+   edges.remove(next_edge);end=next_edge[1];contour.append(end)
+  pen.moveTo(contour[0])
+  for point in contour[1:-1]:pen.lineTo(point)
+  pen.closePath()
  glyphs[name]=pen.glyph();metrics[name]=((len(rows[0])+1)*100,0)
 fb.setupGlyf(glyphs);fb.setupHorizontalMetrics(metrics);fb.setupHorizontalHeader(ascent=800,descent=-200)
 cmap={ord(c):f'u{ord(c):04X}' for c in patterns}

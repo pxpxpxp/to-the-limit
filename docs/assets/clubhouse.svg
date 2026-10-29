@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" shape-rendering="crispEdges" role="img" aria-label="A symmetrical peach and sage pixel-art turbo clubhouse">
+<defs><pattern id="brick" width="32" height="16" patternUnits="userSpaceOnUse"><path d="M0 0H32V16H0Z" fill="#e9b9a5"/><path d="M0 15H32M15 0V8M0 8H32M31 8V16" stroke="#dca58f" stroke-width="1"/></pattern><g id="window"><path d="M0 0h44v64H0z" fill="#874b45"/><path d="M4 4h36v56H4z" fill="#efdcb4"/><path d="M8 8h28v48H8z" fill="#9ebdb5"/><path d="M8 8h8v48H8zM28 8h8v48h-8z" fill="#f3e6c9"/><path d="M20 8h4v48h-4zM8 30h28v4H8z" fill="#874b45"/><path d="M-4 62h52v6H-4z" fill="#b87667"/><path d="M8 8h28v5H8z" fill="#7d9e96"/></g><g id="tree"><path d="M20 48h8v40h-8z" fill="#874b45"/><path d="M8 0h32v8h8v40h-8v8H8v-8H0V8h8z" fill="#8eab8b"/><path d="M8 8h8v32H8z" fill="#a7bf9d"/><path d="M8 82h32v8H8zM12 90h24v18H12z" fill="#b66c59"/></g></defs>
+<path d="M0 0h720v330H0z" fill="#b8d0c4"/><path d="M0 236h720v94H0z" fill="#d5dcba"/><path d="M0 278h720v52H0z" fill="#ddc99f"/><path d="M0 286h720v4H0zM0 316h720v4H0z" fill="#c8af85"/>
+<path d="M60 40h48v8H60zM48 48h72v8H48zM600 40h48v8h-48zM588 48h72v8h-72z" fill="#e8e8ce"/>
+<path d="M132 116h456v154H132z" fill="#82483e"/><path d="M140 116h440v146H140z" fill="url(#brick)"/><path d="M128 112h464v12H128z" fill="#f4e7c7"/><path d="M144 82h432v30H144z" fill="#78968b"/><path d="M156 70h408v12H156zM168 58h384v12H168z" fill="#78968b"/><path d="M156 82h408v8H156zM144 102h432v10H144z" fill="#94afa0"/>
+<path d="M284 34h152v8H284zM272 42h176v38H272zM280 80h160v8H280z" fill="#844b40"/><path d="M280 46h160v30H280z" fill="#eedeb7"/><text x="360" y="65" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="13" letter-spacing="2" fill="#763c39">THE TURBO CLUB</text>
+<path d="M304 120h112v142H304z" fill="#f4e6c9"/><path d="M312 128h96v16h-96z" fill="#b9816e"/><path d="M320 152h80v110h-80z" fill="#82483e"/><path d="M328 160h64v102h-64z" fill="#a4b9a7"/><path d="M356 160h8v102h-8zM328 216h64v6h-64z" fill="#82483e"/><path d="M338 172h10v30h-10zM372 172h10v30h-10z" fill="#e4d3ac"/><path d="M348 230h4v5h-4zM368 230h4v5h-4z" fill="#d5a24f"/>
+<path d="M296 254h128v8H296zM288 262h144v8H288zM280 270h160v8H280zM272 278h176v8H272z" fill="#f0dfb8"/>
+<use href="#window" x="164" y="144"/><use href="#window" x="232" y="144"/><use href="#window" x="444" y="144"/><use href="#window" x="512" y="144"/>
+<path d="M152 220h140v8H152zM428 220h140v8H428z" fill="#f0dfb8"/><path d="M160 228h124v26H160zM436 228h124v26H436z" fill="#d49a85"/>
+<use href="#tree" x="64" y="176"/><use href="#tree" x="608" y="176"/>
+<path d="M116 150h8v124h-8zM596 150h8v124h-8z" fill="#844b40"/><path d="M108 142h24v24h-24zM588 142h24v24h-24z" fill="#f6e2a8"/><path d="M108 138h24v6h-24zM588 138h24v6h-24zM112 132h16v6h-16zM592 132h16v6h-16z" fill="#844b40"/>
+<path d="M340 290h40v6h-40zM344 306h32v4h-32z" fill="#b79b70"/>
+<path d="M176 12h4v36h-4zM540 12h4v36h-4z" fill="#844b40"/><path d="M180 12h24v16h-24zM516 12h24v16h-24z" fill="#ba6d5d"/>
+</svg>
