@@ -1,0 +1,30 @@
+--- a/TurboGrafx16.sv
++++ b/TurboGrafx16.sv
+@@ -75,7 +75,8 @@
+ // 0         1         2         3          4         5         6
+ // 01234567890123456789012345678901 23456789012345678901234567890123
+ // 0123456789ABCDEFGHIJKLMNOPQRSTUV 0123456789ABCDEFGHIJKLMNOPQRSTUV
+-// XXXX XXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
++// XXXX XXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXXX
++// Bit 11 reserved for legacy sprite option; bit 41: 0=Extra (default), 1=Normal.
+ 
+ `include "build_id.v"
+ parameter CONF_STR = {
+@@ -110,7 +111,7 @@
+ 	"P1OS,Colors,Original,Raw RGB;",
+ 	"P1OH,Overscan,Hidden,Visible;",
+ 	"P1OF,Border Color,Original,Black;",
+-	"P1OB,Sprites per line,Normal,Extra;",
++	"P1o9,Sprites per line,Extra,Normal;",
+ 	"P1-;",
+ 	"P1OK,CD Audio Boost,No,2x;",
+ 	"P1OM,ADPCM Audio Boost,No,Yes;",
+@@ -327,7 +328,7 @@
+ 	.GG_RESET((cart_download | code_download) & ioctl_wr & !ioctl_addr),
+ 	.GG_AVAIL(gg_avail),
+ 
+-	.SP64(status[11]),
++	.SP64(~status[41]),
+ 	.SGX(sgx && !LITE),
+ 
+ 	.JOY_OUT(joy_out),

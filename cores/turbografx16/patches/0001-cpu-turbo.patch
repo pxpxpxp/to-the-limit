@@ -1,0 +1,109 @@
+diff --git a/TurboGrafx16.sv b/TurboGrafx16.sv
+index 649d284..380492d 100644
+--- a/TurboGrafx16.sv
++++ b/TurboGrafx16.sv
+@@ -75,7 +75,7 @@ video_freak video_freak
+ // 0         1         2         3          4         5         6
+ // 01234567890123456789012345678901 23456789012345678901234567890123
+ // 0123456789ABCDEFGHIJKLMNOPQRSTUV 0123456789ABCDEFGHIJKLMNOPQRSTUV
+-// XXXX XXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXX
++// XXXX XXXXXXXXXXXXXXXXXXXXXXXXXX  XXXXXXXXX
+ 
+ `include "build_id.v"
+ parameter CONF_STR = {
+@@ -117,6 +117,8 @@ parameter CONF_STR = {
+ 	"P1OIJ,Master Audio Boost,No,2x,4x;",
+ 	"P2,Hardware;",
+ 	"P2-;",
++	"P2o78,CPU Turbo,Off,+20%,+50%;",
++	"P2-;",
+ 	"P2O3,ROM Data Swap,No,Yes;",
+ `ifdef DEBUG_BUILD
+ 	"P2O6,ROM Storage,SDRAM,DDR3;",
+@@ -305,6 +307,7 @@ pce_top #(LITE) pce_top
+ 	.COLD_RESET(cart_download),
+ 
+ 	.CLK(clk_sys),
++	.CPU_TURBO(status[40:39]),
+ 
+ 	.ROM_RD(rom_rd),
+ 	.ROM_RDY(rom_sdrdy & rom_ddrdy & ram_ddrdy),
+diff --git a/rtl/HUC6280/HUC6280.vhd b/rtl/HUC6280/HUC6280.vhd
+index 0d9dd19..e76ba79 100644
+--- a/rtl/HUC6280/HUC6280.vhd
++++ b/rtl/HUC6280/HUC6280.vhd
+@@ -9,6 +9,7 @@ entity HUC6280 is
+ 		CLK		: in std_logic;
+ 		RST_N		: in std_logic;
+ 		WAIT_N	: in std_logic;
++		CPU_TURBO : in std_logic_vector(1 downto 0) := "00";
+ 		  
+ 		A			: out std_logic_vector(20 downto 0);
+ 		DI			: in std_logic_vector(7 downto 0);
+@@ -58,6 +59,8 @@ architecture rtl of HUC6280 is
+ 	signal CPU_RDY 		: std_logic;
+ 	
+ 	signal CPU_CLK_CNT 	: unsigned(4 downto 0);
++	-- Latched after the CPU address and CSH/CSL outputs settle.
++	signal CPU_CYCLE_LAST : unsigned(4 downto 0);
+ 	signal IO_CLK_CNT 	: unsigned(2 downto 0);
+ 	signal VDC_SEL_OLD	: std_logic;
+ 	
+@@ -89,13 +92,14 @@ begin
+ 	begin
+ 		if RST_N = '0' then
+ 			CPU_CLK_CNT <= (others=>'0');
++			CPU_CYCLE_LAST <= to_unsigned(23, CPU_CYCLE_LAST'length);
+ 			CPU_CE <= '0';
+ 			CPU_CER <= '0';
+ 			IO_CLK_CNT <= (others=>'0');
+ 			IO_CE <= '0';
+ 		elsif rising_edge(CLK) then
+ 			CPU_CE <= '0';
+-			if (CPU_CLK_CNT = 5 and CPU_CS = '1') or (CPU_CLK_CNT = 23 and CPU_CS = '0') then
++			if CPU_CLK_CNT = CPU_CYCLE_LAST then
+ 				if WAIT_N = '1' then
+ 					CPU_CLK_CNT <= (others=>'0');
+ 					CPU_CE <= '1';
+@@ -107,6 +111,21 @@ begin
+ 			CPU_CER <= '0';
+ 			if CPU_CLK_CNT = 1 then
+ 				CPU_CER <= '1';
++				-- Only accelerate high-speed ROM/RAM/internal cycles. Keep
++				-- low-speed mode and the entire $FF I/O page at stock speed.
++				-- Four master clocks is the minimum: preserve the bus setup
++				-- pipeline and allow eight clocks for the 2x SDRAM controller.
++				CPU_CYCLE_LAST <= to_unsigned(23, CPU_CYCLE_LAST'length);
++				if CPU_CS = '1' then
++					CPU_CYCLE_LAST <= to_unsigned(5, CPU_CYCLE_LAST'length);
++					if CPU_A(20 downto 13) /= x"FF" then
++						case CPU_TURBO is
++							when "01" => CPU_CYCLE_LAST <= to_unsigned(4, CPU_CYCLE_LAST'length);
++							when "10" => CPU_CYCLE_LAST <= to_unsigned(3, CPU_CYCLE_LAST'length);
++							when others => null; -- Off, including reserved value 11
++						end case;
++					end if;
++				end if;
+ 			end if; 
+ 			
+ 			IO_CE <= '0';
+diff --git a/rtl/pce_top.vhd b/rtl/pce_top.vhd
+index f1080ab..341c66b 100644
+--- a/rtl/pce_top.vhd
++++ b/rtl/pce_top.vhd
+@@ -12,6 +12,7 @@ entity pce_top is
+ 		RESET			: in  std_logic;
+ 		COLD_RESET	: in  std_logic;
+ 		CLK 			: in  std_logic;
++		CPU_TURBO : in std_logic_vector(1 downto 0) := "00";
+ 
+ 		ROM_RD		: out std_logic;
+ 		ROM_RDY		: in  std_logic;
+@@ -269,6 +270,7 @@ port map(
+ 	CLK 		=> CLK,
+ 	RST_N		=> RESET_N,
+ 	WAIT_N	=> ROM_RDY and not CPU_PAUSE_EN,
++	CPU_TURBO => CPU_TURBO,
+ 
+ 	IRQ1_N	=> VDC0_IRQ_N and VDC1_IRQ_N,
+ 	IRQ2_N	=> CD_IRQ_N,
