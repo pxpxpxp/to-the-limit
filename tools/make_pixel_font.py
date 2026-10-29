@@ -28,5 +28,5 @@ for c,rows in [('\0',['11111','10001','10101','10101','10101','10001','11111'])]
 fb.setupGlyf(glyphs);fb.setupHorizontalMetrics(metrics);fb.setupHorizontalHeader(ascent=800,descent=-200)
 cmap={ord(c):f'u{ord(c):04X}' for c in patterns}
 cmap.update({ord(c.lower()):f'u{ord(c):04X}' for c in patterns if c.isalpha()})
-fb.setupCharacterMap(cmap);fb.setupNameTable({'familyName':'Limit Pixel','styleName':'Regular','uniqueFontIdentifier':'LimitPixelMono2','fullName':'Limit Pixel','psName':'LimitPixel-Regular'});fb.setupOS2(sTypoAscender=800,sTypoDescender=-200,usWinAscent=800,usWinDescent=200);fb.setupPost(isFixedPitch=1);fb.font.flavor='woff';fb.save(str(Path(__file__).resolve().parents[1] / 'docs/assets/limit-pixel.woff'))
+fb.setupCharacterMap(cmap);fb.setupNameTable({'familyName':'Limit Pixel','styleName':'Regular','uniqueFontIdentifier':'LimitPixelMono2','fullName':'Limit Pixel','psName':'LimitPixel-Regular'});fb.setupOS2(sTypoAscender=800,sTypoDescender=-200,usWinAscent=800,usWinDescent=200);fb.setupPost(isFixedPitch=1);fb.font.flavor='woff';fb.save(str(Path(__file__).resolve().parents[1] / 'docs/assets/limit-pixel-mono.woff'))
 print('Created original pixel font')
