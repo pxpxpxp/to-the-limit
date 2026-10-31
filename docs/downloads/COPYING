@@ -1,0 +1,14 @@
+LICENSE TEXT INDEX — TurboGrafx16 experimental source
+
+This package contains components under different terms. Read each source
+file’s existing notice; no blanket license or new ownership is asserted here.
+
+GPL version 2: LICENSES/GPL-2.txt
+GPL version 3: LICENSES/GPL-3.txt
+LGPL version 3: LICENSES/LGPL-3.txt (read together with GPL version 3)
+
+Explicit “or later” options remain as originally stated. Files merely saying
+“GPL” without a version remain version-unspecified in this audit.
+TEMLIB permission and Intel/Altera vendor terms are retained in source headers.
+The Main_MiSTer firmware audit retains its upstream LICENSE separately.
+See ATTRIBUTION.md and the path-by-path inventory for details and uncertainties.

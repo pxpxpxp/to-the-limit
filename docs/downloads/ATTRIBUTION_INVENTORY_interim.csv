@@ -1,0 +1,230 @@
+path,sha256_before_documentation_additions,license_signal_not_legal_determination,notice_matches
+INTERIM_TEST_NOTICE.md,0228985cba98cf0ce2375b2a6b6f967db21decc70c1726965f4fbce5e7c9bc50,No explicit license detected; do not infer from absence,no
+ReadMe.md,25f77b9ba967d280f78474a4790b662946ad93119416375d1f5a92f7a80b23d2,No explicit license detected; do not infer from absence,yes
+TurboGrafx16.qsf,57c320f57856273776485d9ce89578797c66394da41a6a19386d1cf62caacf6b,No explicit license detected; do not infer from absence,no
+TurboGrafx16.sv,146249becaa14346283ad9c48aab8cf2760653a22cd14ab0659efe0667fe8867,GPL-2.0-or-later (header),yes
+TurboGrafx16_Q13.qsf,a236ce4fb39415abaed9fe85631bd5fa5bd067e2a5edf24a0d39d13d15dd30a4,No explicit license detected; do not infer from absence,no
+build_id.v,46fde995c0bd893345c1eaf69ab79a2daf1e12646882e9bc7d44c8856aea8c83,No explicit license detected; do not infer from absence,no
+docs/CPU_Turbo.md,967acc1afa29f02fc2b665cadcd3d7b836b83868b8fe61210059beef99c1a31a,No explicit license detected; do not infer from absence,no
+docs/NinjaSpirit_SaveStates_initial.md,16efcf752e4895a1779e11b87ad744296726be59c1813b9bd1da600854b1dff4,No explicit license detected; do not infer from absence,yes
+docs/Reloadable_SaveStates.md,be725371839ba58c069cc1ec02c17a4ceeb8b28be9b566bb4484b96c03ebc08e,No explicit license detected; do not infer from absence,yes
+files.qip,49843146ce8f0c6135a7464a738e891046dcf1e1b4ca4fe1ce2fa28224033651,No explicit license detected; do not infer from absence,no
+palette.mif,2f06fc120cd65bd5597cae65fc2e55af800ce310c088a80db6ac56addf5c5a30,No explicit license detected; do not infer from absence,no
+rtl/CEGen.vhd,c8140af884fcdceaf2587fc3d8da236565235a4021246188b59560ae36be6a37,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/AddSubBCD.vhd,375ba22174f6f60844118e1951d072fd5dc6600393cd937bd34a5453fddbef78,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280.qip,8ba7a8c721749783c516901f6cf77c3c0f4f8a72d00b4ea9e47fba6398d37b04,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280.vhd,5a3af972a76475831651ae773037f68cf3dfed4142ab3a035275f08d0df5f706,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280_AG.vhd,3fbd9b38aa310a08629529e04dc8357cfc14cc986e9b9b0e506505a5ed99141d,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280_ALU.vhd,dda2b63d5b4ca590bfc5d5282dbc2cca042352ab433f9219631bc111283c8473,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280_CPU.vhd,e0ea5677491c3b46b7ab70c146558b1371965f82c57e5e6c46f82214f933ad5a,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280_MC.vhd,1822a93f4a1d303cdfafa0f4eab226d06c5c42c0fe45a2d8af4ffb9b1b7b8309,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/HUC6280_PKG.vhd,6e0c75ddb5b791d376ac620fd5b0a232ac8b0a573065b8e108882e9ce3bc7917,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/psg.vhd,0a3abc5f031e73aa40499ad75ac63b0ada7d79cab9d35505bb252effaafa8a65,No explicit license detected; do not infer from absence,no
+rtl/HUC6280/voltab.mif,4aa8de593d1eafa287584806e60265f9092c0d2020385974b22354849510fd1f,No explicit license detected; do not infer from absence,no
+rtl/arcade.sv,3468891132b4a3040ba9c9f267ab78d08e6e15c1c4a6a33be9f5fea06d8f1ff5,GPL-3.0-or-later (header),yes
+rtl/cache_2way.sv,61eb9a80af81e8c3932aa0ff0dc68d9e8dcd628a061b0bbc8dd20c69644dcb0f,No explicit license detected; do not infer from absence,no
+rtl/cd/CDDA_FIFO.vhd,7064c547eda4bbd2a66b538f9aeca714c35142efec9f5259a15192951f0641fd,Intel/Altera vendor notice (inspect file),yes
+rtl/cd/CDSUBC_FIFO.vhd,c5d48601f779fb6216f1053548f1714c64dcd981b706574a6b398a0324b04cbc,Intel/Altera vendor notice (inspect file),yes
+rtl/cd/MSM5205.vhd,ba8507fbb1ad986433678024c8103bb27406a427b1a33164e286ffeac92ce115,No explicit license detected; do not infer from absence,no
+rtl/cd/SCSI.vhd,3345f76c8aef2973ae44b623127e400714f44a442fd424043c9cf0690a41c202,No explicit license detected; do not infer from absence,no
+rtl/cd/SCSI_FIFO.vhd,b2819f6850b426397d07d3b9f83f8d4bbd3be1f0b4ef1ba1b813d2b46f2eab3e,Intel/Altera vendor notice (inspect file),yes
+rtl/cd/cd.qip,f1d8bb0eb211d42b77301518657c1ade34e9054ea4fdfdd9c647348b6e205c21,No explicit license detected; do not infer from absence,no
+rtl/cd/cd.vhd,96aa3b09939eed74f56452ab4bbe30f0d1b9c094194c1d980f6b3d892af5999d,No explicit license detected; do not infer from absence,no
+rtl/cheatcodes.sv,566d91e33902e1b4fad78fa718ee4ec5d9af364db138b7117f6d256b89a8ba7e,No explicit license detected; do not infer from absence,no
+rtl/color_mix.sv,67d1846e0f93b6e41bb689152bf64b37a4a23634aac3b6769700770f5ffd6cbe,GPL-2.0-or-later (header),yes
+rtl/ddram.sv,40fddf41a6bfa6d8f5c1904cc730d3ffa07136b9614b0282073a04e7a885d3e9,GPL-3.0-or-later (header),yes
+rtl/dpram.vhd,a226b7b5995dfdacd33d9a1b5dacd8270a82d5241956fd965356cd21d0bcc051,No explicit license detected; do not infer from absence,no
+rtl/hps_ext.v,38e8ced70d7bb224b99f7d787fd187db63d0d4f9c141698ec6261bba5e508252,GPL-3.0-or-later (header),yes
+rtl/huc6202.vhd,93bedbbe35394f7b84d59b41633f351c7079823948b127f44ec19b1a14511746,GPL-2.0-or-later (header),yes
+rtl/huc6260.vhd,05de4f88af3fc7349145cf88e856d040fec18d5d35efa3fad69566f2e06fac0e,No explicit license detected; do not infer from absence,no
+rtl/huc6260_palette_init.mif,a93afe392275acc833ac9a5b11744b94f71fcc51a06825bc54cb245914c2dbef,No explicit license detected; do not infer from absence,no
+rtl/huc6270.vhd,521fa289ae7cbcca88e624aa83c976b6815c469a1c297c9f864cf3b96ab90d2e,No explicit license detected; do not infer from absence,no
+rtl/mb128.sv,3a758481c7413f6206aedcd87727afc7bc07fc26747841aac0dede89d43a45af,No explicit license detected; do not infer from absence,yes
+rtl/ninja_savestate.sv,896a39b7a98d6e3321bc934fde091b709fba15a94b791f9e3121d02b4df4fa84,No explicit license detected; do not infer from absence,no
+rtl/pce_top.vhd,cba3f4be51a81c0be03bee08fd8e5b25b247a5b1323ba0053daaddf0aa299931,No explicit license detected; do not infer from absence,no
+rtl/pll.qip,63db8eacf726e0e76a665b2fa9dcb0ef311da631e3571a136977f422034ba80f,No explicit license detected; do not infer from absence,yes
+rtl/pll.v,f9c4f05216a262546778d9719b38c116e0dbbbcb9bbf328ff231d2167144d614,Intel/Altera vendor notice (inspect file),yes
+rtl/pll/pll_0002.qip,98c91540a36e672f25f071bfaae965b8c9f60c679db4fbe226578c8c78c5052a,No explicit license detected; do not infer from absence,no
+rtl/pll/pll_0002.v,1166036cfbe8f495be24abeacb20e18b81642e9c09ea32b4a564ff07612c684a,No explicit license detected; do not infer from absence,no
+rtl/pll/pll_0002_q13.qip,58d1281c86501f8926b2b156edeada9bc7c27c4156f456eb3568a5ba40baea0f,No explicit license detected; do not infer from absence,no
+rtl/reset_request_sync.sv,09d6cf8754ca3eed7d9f2a4ae48350fdd4a1798af25ccc6b869957e4cd50902c,No explicit license detected; do not infer from absence,no
+rtl/sdram.v,2157b728ab3a416c586461999211e178132878c76abbc6bd6521e4fe3d6c8b36,GPL-3.0-or-later (header),yes
+rtl/snapshot_layout.vh,bd3e911b280b45c6b9422af12443dc5bba23c67759c1ab270c9889eff793fd81,No explicit license detected; do not infer from absence,no
+rtl/xe1ap.v,a35d677047ce3a7891f17a5442784a20e55750b4fee6ae91fabf2d80b992d87f,No explicit license detected; do not infer from absence,no
+savestate/build.py,d9a40259c23905a5bd9a75839741cdca34109c43ce8504b8a38e293eb116506f,No explicit license detected; do not infer from absence,no
+savestate/build_reports/TurboGrafx16.qsf,2abd713eda43b56abf863007feee1746e6e72a33de5e7452a0978bcb76926a1d,No explicit license detected; do not infer from absence,no
+savestate/firmware_persistence_audit/README.md,9ca3b46e514d749ded43ed67342a1433bf73b7c401e31c3110fde65c3300a690,No explicit license detected; do not infer from absence,no
+savestate/firmware_persistence_audit/file_path.inc,4e9aa4a03bf8f96fee7a83ee3c46374d287649869cafa9dee5949c4362d6bc54,No explicit license detected; do not infer from absence,no
+savestate/firmware_persistence_audit/host_process_ss_test.cpp,d5946c6a9b06fc07f3ebff64d38eae254a2dc6cb0e656c65661b8bd6ae86d3ca,No explicit license detected; do not infer from absence,no
+savestate/firmware_persistence_audit/process_ss.inc,f37a8147491880322f03aa64cc62395795b03f5a802b5b57d6b7a36d2e69e9cd,No explicit license detected; do not infer from absence,no
+savestate/firmware_persistence_audit/run_test.py,73d47d79ac2fa7c88ad28a3f68edcc39b1b478a5907048698e74f22a17ea98f4,No explicit license detected; do not infer from absence,no
+savestate/fit_attempts/seed2-low/TurboGrafx16.qsf,600643faddde3d41c384b5851c18dcd662573c13bb043ba647f9cf73ee894429,No explicit license detected; do not infer from absence,no
+savestate/fixed_validation/README.md,5e3aeb133e04924a9a81f521aba265b24352e26cdf14a051c34b6a503ef21615,No explicit license detected; do not infer from absence,no
+savestate/instrument.py,e3255fa2846e99733f61ec72efafca05870ee11dffee6545175bae0c21ca26c2,No explicit license detected; do not infer from absence,no
+savestate/integrate.py,fe27f8eb2636e4b726f35ab2239c5ca134b0c200e04e8a4a9e9f7769b7bfbed2,No explicit license detected; do not infer from absence,no
+savestate/interim_validation/README.md,48936a6fd00284a36a05dd1fc91672a36295a9b13d9d433ec14fa34bf8375d36,No explicit license detected; do not infer from absence,no
+savestate/memory_ports.py,7d46c9d597cb99ee913e9d129a8c63fc1b40839e5722f52b166ceee19bfadd84,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/CEGen.vhd,12a5a3b833ca36af1c9f83f2d9a3f1482d7fe12ff69c7756a4e3d74559edebb7,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/AddSubBCD.vhd,375ba22174f6f60844118e1951d072fd5dc6600393cd937bd34a5453fddbef78,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280.qip,8ba7a8c721749783c516901f6cf77c3c0f4f8a72d00b4ea9e47fba6398d37b04,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280.vhd,081e932d7d11758ed1bb57279f6ff674075062660b57b843176b5154cac9fe81,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280_AG.vhd,6df7f4ec520af6c60feb86bded00fb626f24cfdf0481bf542dc07d9e15308706,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280_ALU.vhd,851d13619b53e9bdd7f085da2cf3f8325614dce59224763daea628bb00409d2d,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280_CPU.vhd,ab62ac6e334359eb0818766257d50de5563779f95517f5aa7eb605870bc65db8,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280_MC.vhd,631b5d1b4163d10eec8f28baa7e37c4934ee09e61f89685d79d1b7e505c9feb4,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/HUC6280_PKG.vhd,6e0c75ddb5b791d376ac620fd5b0a232ac8b0a573065b8e108882e9ce3bc7917,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/psg.vhd,a7c30b1949f8ce3da77f6d7852751b0b1ffc1cd4961bb2fae55a8210af7a87e9,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/HUC6280/voltab.mif,4aa8de593d1eafa287584806e60265f9092c0d2020385974b22354849510fd1f,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/arcade.sv,3468891132b4a3040ba9c9f267ab78d08e6e15c1c4a6a33be9f5fea06d8f1ff5,GPL-3.0-or-later (header),yes
+savestate/original-rtl/cache_2way.sv,61eb9a80af81e8c3932aa0ff0dc68d9e8dcd628a061b0bbc8dd20c69644dcb0f,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/cd/CDDA_FIFO.vhd,7064c547eda4bbd2a66b538f9aeca714c35142efec9f5259a15192951f0641fd,Intel/Altera vendor notice (inspect file),yes
+savestate/original-rtl/cd/CDSUBC_FIFO.vhd,c5d48601f779fb6216f1053548f1714c64dcd981b706574a6b398a0324b04cbc,Intel/Altera vendor notice (inspect file),yes
+savestate/original-rtl/cd/MSM5205.vhd,ba8507fbb1ad986433678024c8103bb27406a427b1a33164e286ffeac92ce115,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/cd/SCSI.vhd,3345f76c8aef2973ae44b623127e400714f44a442fd424043c9cf0690a41c202,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/cd/SCSI_FIFO.vhd,b2819f6850b426397d07d3b9f83f8d4bbd3be1f0b4ef1ba1b813d2b46f2eab3e,Intel/Altera vendor notice (inspect file),yes
+savestate/original-rtl/cd/cd.qip,f1d8bb0eb211d42b77301518657c1ade34e9054ea4fdfdd9c647348b6e205c21,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/cd/cd.vhd,96aa3b09939eed74f56452ab4bbe30f0d1b9c094194c1d980f6b3d892af5999d,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/cheatcodes.sv,566d91e33902e1b4fad78fa718ee4ec5d9af364db138b7117f6d256b89a8ba7e,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/color_mix.sv,67d1846e0f93b6e41bb689152bf64b37a4a23634aac3b6769700770f5ffd6cbe,GPL-2.0-or-later (header),yes
+savestate/original-rtl/ddram.sv,db8e8de918e921eeed50288456e9c81b60bff0d8821dfa28856a9ebc68fa48bf,GPL-3.0-or-later (header),yes
+savestate/original-rtl/dpram.vhd,e41f49edfa22ec3675692b6f4e16d748a7068b2b6db282f286765b53bae4872d,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/hps_ext.v,38e8ced70d7bb224b99f7d787fd187db63d0d4f9c141698ec6261bba5e508252,GPL-3.0-or-later (header),yes
+savestate/original-rtl/huc6202.vhd,93bedbbe35394f7b84d59b41633f351c7079823948b127f44ec19b1a14511746,GPL-2.0-or-later (header),yes
+savestate/original-rtl/huc6260.vhd,8f2d937798808f3be40c85d1de4292b3f5013c7138672abd9a997ec732d8a9a0,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/huc6260_palette_init.mif,a93afe392275acc833ac9a5b11744b94f71fcc51a06825bc54cb245914c2dbef,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/huc6270.vhd,1f0e25e3be8a7eccb5e45378538e61261f6109a30ff7dac8b2da31afee4987cb,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/mb128.sv,3a758481c7413f6206aedcd87727afc7bc07fc26747841aac0dede89d43a45af,No explicit license detected; do not infer from absence,yes
+savestate/original-rtl/pce_top.vhd,6ec9a98dcbb9aa4948a87e72e679c8d370d3210361ced3981281508d76a7b259,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/pll.qip,63db8eacf726e0e76a665b2fa9dcb0ef311da631e3571a136977f422034ba80f,No explicit license detected; do not infer from absence,yes
+savestate/original-rtl/pll.v,f9c4f05216a262546778d9719b38c116e0dbbbcb9bbf328ff231d2167144d614,Intel/Altera vendor notice (inspect file),yes
+savestate/original-rtl/pll/pll_0002.qip,98c91540a36e672f25f071bfaae965b8c9f60c679db4fbe226578c8c78c5052a,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/pll/pll_0002.v,1166036cfbe8f495be24abeacb20e18b81642e9c09ea32b4a564ff07612c684a,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/pll/pll_0002_q13.qip,58d1281c86501f8926b2b156edeada9bc7c27c4156f456eb3568a5ba40baea0f,No explicit license detected; do not infer from absence,no
+savestate/original-rtl/sdram.v,fefc5f4f9794bda28b1275bfc367812e54928b07fa9b87f593b1fbe126d8c207,GPL-3.0-or-later (header),yes
+savestate/original-rtl/xe1ap.v,a35d677047ce3a7891f17a5442784a20e55750b4fee6ae91fabf2d80b992d87f,No explicit license detected; do not infer from absence,no
+savestate/original-top.sv,1996be5a503335b7e32160cafd8ca7353ef9e70632798ce6970db53786fd586f,GPL-2.0-or-later (header),yes
+savestate/package_reloadable.py,004d31820d8ed33ce52fdfd322042fa144af7619b7098ba3679c1345bfecb5d6,No explicit license detected; do not infer from absence,no
+savestate/reset_audit/run_input_reset.py,1895d2a3347df3468fc693abc90f064f47e01a2ea914cb3de4cffaf4bb674854,No explicit license detected; do not infer from absence,no
+savestate/reset_audit/run_interim_commit_matrix.py,18501e69dcabf59483c02736aaf778304fa56d542ea62450ce8f7e7dec91b1ba,No explicit license detected; do not infer from absence,no
+savestate/reset_audit/run_interim_reset.py,d6738860021ead379ced2841c054ab4c2897a3129393856cfbc1b342d1000b38,No explicit license detected; do not infer from absence,no
+savestate/reset_audit/run_interim_reset_patched.py,a4c37cb8042c656ca37c36d66dfa9bc614f4d4b5db3e79fafa3c1c7cc991bb5c,No explicit license detected; do not infer from absence,no
+savestate/reset_audit/tb_interim_reset.sv,a00ad60291a99aed5eaae07dbb72447eba1f35725621f74bd73b71529885115a,No explicit license detected; do not infer from absence,no
+savestate/reset_audit/tb_interim_reset_patched.sv,39012b57da777ae8526483badce212c7af25ca1542ac4f24c221617458a4bf19,No explicit license detected; do not infer from absence,no
+savestate/serial_scan.py,9290e01ff1d2cadb283d3db4211e0cac4cbf764c71f6c0d45ebb87451e5fa565,No explicit license detected; do not infer from absence,no
+savestate/serialize.py,4adce524a041146d58e1b7b63ec0bb9c32f7db5459002af4f202ea8f59de594a,No explicit license detected; do not infer from absence,no
+savestate/snapshot_file.py,a513bfd4138bf59d072d477f330e6f3c871e8f22287192abf91159dcaa9d7d64,No explicit license detected; do not infer from absence,no
+savestate/timing_provenance/README.md,8d0d6f343f457e63cca53803d9c9b1f9e8924d945f1f033ef386430efcb54a1f,No explicit license detected; do not infer from absence,no
+savestate/timing_provenance/audit.tcl,10575516588ecbb4a918fca4cc1d693e42c757879ec1c7b387880d1f74328b88,No explicit license detected; do not infer from absence,no
+savestate/timing_provenance/compare_sdc.py,a572b3688798d9dac07160f531023b7bf6fa718690f730a878a20f43a84ba8c4,No explicit license detected; do not infer from absence,no
+savestate/timing_provenance/create_verdict.py,c2c9f7f1793fabfd644c9f30d625f17669aac371fccd8e50d1be6c656845200c,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/TurboGrafx16.sv,140cd298ce4cdf57213d46293ded023edb6b242a3de645865526dcef73995651,GPL-2.0-or-later (header),yes
+savestate/volatile-baseline/rtl/CEGen.vhd,37492dc5f294c2e877343697b28077af6244852e65edb4497fc3cd6b50d2d39b,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/HUC6280.vhd,327d681b744ef1aaa457bbec73ac3367a90afaf83a6b2b388ff917e228c94aff,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/HUC6280_AG.vhd,dbfe6b67957ea83ec0db0be3e3595e93de798e3d732039db8505a604fc270746,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/HUC6280_ALU.vhd,d92df6908394bb35fc3fed211f55ff2687e0355c92df6364b581c4d86d903722,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/HUC6280_CPU.vhd,fdf4b7eeb72f2fc4fdcee94c09c65e5260cf3fbb42bde6db9374ff034bdda095,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/HUC6280_MC.vhd,c42431e0c35e9ec0290dc440c13607090d4ac6d9cb48880d533265d4ae21281f,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/HUC6280_PKG.vhd,6e0c75ddb5b791d376ac620fd5b0a232ac8b0a573065b8e108882e9ce3bc7917,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/HUC6280/psg.vhd,706d8dba1e629b4de207d82e31f1eabe585deb5ef78a68fbf4cfa0b8cea377a8,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/dpram.vhd,c4bfd14e9ab5f0ac06a1d531ec7e3b47a79f7fbb60680f4e95031b0db16ad8cf,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/huc6260.vhd,4b9c562a44b7456c5f40ba6857cd357974b8db0e0029840954202229aa965ab2,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/huc6270.vhd,b8613af187d7f36302188d6d80107a0c56d82a494a2a566366903eb760e3fe1e,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/pce_top.vhd,659c288aba8da9c0aeb30efd48ddbfdaf377a9c8ff65cb49d170815fd6986081,No explicit license detected; do not infer from absence,no
+savestate/volatile-baseline/rtl/sdram.v,a968130183d3dc7127c9a82d60d7c913f80c611831e2eee326f5712b4808e4f8,GPL-3.0-or-later (header),yes
+sys/alsa.sv,74943b658cd3f4adc5b74c72f225fb42b95122a1c5e453df860a4c6a9bf72fc9,GPL-2.0-or-later (header),no
+sys/arcade_video.v,ce64cdd7f900ded7b9cd9aa728dab7383b7561cdc75dfe82ab23fe27a3d217d3,GPL-2.0-or-later (header),yes
+sys/ascal.vhd,a4080e5a8eb3ff4fe302fff35df8563d0d9e80c279d316073699da7cbb961273,TEMLIB permission notice,yes
+sys/audio_out.sv,bbee17a6d1e3c0dd4cf19e84eda59de37b25687c97036c9c4bd16d800b9c24bd,GPL-2.0-or-later (header),no
+sys/build_id.tcl,148dc6a8124d36ac2898a45d085960cc05178a76d7297fde8877925fc0a74e88,No explicit license detected; do not infer from absence,no
+sys/ddr_svc.sv,8dfa874b9a93b4dbbe3b2fcf4f9035a895262cc090d398f4099941a626f41c08,GPL-3.0-or-later (header),yes
+sys/emu_ports.vh,0b8f96815236ea4fcfec6fa3592b58f4c53f12094f31a26fd509709b503225e0,No explicit license detected; do not infer from absence,yes
+sys/f2sdram_safe_terminator.sv,400bcbcfc0b4aae324fe813866a5443d577bf4de9b4ab1454cb068733d170261,No explicit license detected; do not infer from absence,yes
+sys/gamma_corr.sv,2754944c6fe05d921374d1fecc26621782520b3bc6fbf600ca561e9f37c7af88,No explicit license detected; do not infer from absence,no
+sys/hps_io.sv,fc939385b3fdd920e70de93b37e4bbde2ed759bba4f7888bde67f577814e708f,GPL-3.0-or-later (header),yes
+sys/hq2x.sv,2146b69cf63c26a4b41407e9ac1b4462db4d7e3ea6d8a99f31ba12712d68f975,"GPL, version unspecified; refers to COPYING",yes
+sys/i2c.v,09bd7ebd5d84fb57f6a9d569e5214f3154c49e55826c15bd78884f3c781fec5b,No explicit license detected; do not infer from absence,no
+sys/i2s.v,927d2aea6797fb837f383e5e8a3259609e132ed24883127240ab21601f467efa,No explicit license detected; do not infer from absence,no
+sys/iir_filter.v,570a8095c15af84a60015b5eab105cee6e2d7edde77e20f0ce40c075ab2db8b7,GPL-2.0-or-later (header),yes
+sys/ltc2308.sv,825fa1197c8e9f31c19c2fef1b01693133fb7df3cfb2dd831f2848a98fc6899c,GPL-2.0-or-later (header),yes
+sys/math.sv,d384fa9fcf73100cb28a2affc5db1e4aacc87620287971c3882507fc3af056cc,No explicit license detected; do not infer from absence,no
+sys/mcp23009.sv,f168485e0b64c0545060f25b858c9f1c12b57024ce441754bb6a0cb0e9072e3f,No explicit license detected; do not infer from absence,no
+sys/mt32pi.sv,4ad39571d16a4b25347030d75ffdf601803ddec71e2e3fcabe962103cc45a1a2,No explicit license detected; do not infer from absence,no
+sys/osd.v,3d544d9ed6e3e39b49ec814dff884176e7f6a052e4a5693a9c5f0e6005e9d83e,No explicit license detected; do not infer from absence,no
+sys/pll.13.qip,f25f58e7c0290583f33ee0fdd729a4470cc69312686f0f1ecb95c61115d61cec,No explicit license detected; do not infer from absence,no
+sys/pll_audio.13.qip,60edce734c54e4b9f9d56f078bc797841e52c6817f4d27e0cfe77db5d77b2596,No explicit license detected; do not infer from absence,no
+sys/pll_audio.qip,278496eefe70d18f6b3ccf624c3a4595ccca74a9a6740eb4520200f1e929a236,No explicit license detected; do not infer from absence,yes
+sys/pll_audio.v,1662fff7650cd443db81db7f0707f5583d223372b3e3c41af2d41ea4f3ac38f3,Intel/Altera vendor notice (inspect file),yes
+sys/pll_audio/pll_audio_0002.qip,4cedd5394006286e0be61acdcbb6455f35cdf5c1488f4eb4a76b60e20eb43fb8,No explicit license detected; do not infer from absence,no
+sys/pll_audio/pll_audio_0002.v,2b24d2a561d81cc8b20f725884ee9c243e619058e42ebcdcf6f491d33008696c,No explicit license detected; do not infer from absence,no
+sys/pll_cfg.qip,7c1573f321012132479272242434d02058b1bcfe8d89843130ef11173a901eae,No explicit license detected; do not infer from absence,no
+sys/pll_cfg/altera_pll_reconfig_core.v,9058d2c68e9cb0b1b6b3ab5487daad8aeaf04461e162aba317857dd133329189,Intel/Altera vendor notice (inspect file),yes
+sys/pll_cfg/altera_pll_reconfig_top.v,34c11c19e6bf3797d2db2e41314ce802f5a01041265ce943b54e7f20eb2027c9,Intel/Altera vendor notice (inspect file),yes
+sys/pll_cfg/pll_cfg.v,e07ae93193537830b3bc9029465e763a6bfe354c25b7e7747eeeb4094b08ad10,Intel/Altera vendor notice (inspect file),yes
+sys/pll_cfg/pll_cfg_hdmi.v,d3874dda124af03656054fa1ae1ee70f1a4d3cea6d4670795a5168325bb6760a,Intel/Altera vendor notice (inspect file),yes
+sys/pll_hdmi.13.qip,625df824716313233400454bc1142615fb3a234a494225691c8a554753b1731b,No explicit license detected; do not infer from absence,no
+sys/pll_hdmi.qip,5571604010bf98858a0797a2286d2389e105d32a97b42508865b02ba4237dd0d,No explicit license detected; do not infer from absence,yes
+sys/pll_hdmi.v,499561547c1045a46f1137558e2bab83d8e026e5d32669b5c5779a264b7ed676,Intel/Altera vendor notice (inspect file),yes
+sys/pll_hdmi/pll_hdmi_0002.qip,de648286a832ee72839dd6abb444231a4238d32b2c26f29426399d2221d7bf5b,No explicit license detected; do not infer from absence,no
+sys/pll_hdmi/pll_hdmi_0002.v,27c77f35c89e97994477801f83edf3c7e9c5b9e57df49864434d300c40e9f1f7,No explicit license detected; do not infer from absence,no
+sys/pll_hdmi_adj.vhd,ae18c82eef2f6b9c7783c68ac272d03f570eb1bdaddce14a1908c351da51a71b,No explicit license detected; do not infer from absence,no
+sys/pll_q13.qip,c2b9c95a49d9b1100b0640bbdeea1acff845b0a8cbc11a7259c0913d2c61cfa8,No explicit license detected; do not infer from absence,no
+sys/pll_q17.qip,7139faf33ae28066e805f290b15401eddb092d4b7d31b529a3ce1f0213fbc90a,No explicit license detected; do not infer from absence,no
+sys/pll_q23.qip,7139faf33ae28066e805f290b15401eddb092d4b7d31b529a3ce1f0213fbc90a,No explicit license detected; do not infer from absence,no
+sys/scandoubler.v,d36181c5fde9df0a504c547e23f60bcf201420052ada2682f081b00fd9485e6b,GPL-3.0-or-later (header),yes
+sys/scanlines.v,1fc7ac5359fd224a3fc06388f7671e07bf57cf6a39f35803a265661c56c564d4,No explicit license detected; do not infer from absence,no
+sys/sd_card.sv,25114f9a0e9ab4dd702633ae927fc825dc79a4d9f7746c1bb75dbd10d61eb6d6,LGPL-3.0-or-later (header),yes
+sys/shadowmask.sv,88429d137b4ce9f6538a052f03d874604f46decf6d69b3fc824cc795efcf3193,No explicit license detected; do not infer from absence,no
+sys/sigma_delta_dac.v,352d31dd185bce14d9d1e8a4999fbb5f2b5b2e42b048bdc9f4b828119cc5127a,No explicit license detected; do not infer from absence,no
+sys/spdif.v,a617bba332c4611caf81ba585b8f6828c7899aec5f81664a870f10419cb9b451,No explicit license detected; do not infer from absence,yes
+sys/sys.qip,246a7032e993b5e0591d22122921fd919e55dc49441fe6b2ee2b80e98fd40f84,No explicit license detected; do not infer from absence,no
+sys/sys.tcl,e9ab2b7c89b4347854810387550a65458aa3ec9de1bd26ad74328d73376f6a88,No explicit license detected; do not infer from absence,no
+sys/sys_analog.tcl,e4cbfd22985fa046b546c0cfc626fccf773d9098b7c6a595f8bea66d67d25203,No explicit license detected; do not infer from absence,no
+sys/sys_dual_sdram.tcl,4f41376069b2070079d8ba4ae4a722c8ecfe3ca4b99798d0bdd8cda986b5ad5b,No explicit license detected; do not infer from absence,no
+sys/sys_top.v,3981b194c6a1187b42b5ee6915f4dcca5b0a3db2ba6b357671562f23626c3715,GPL-2.0-or-later (header),no
+sys/sysmem.sv,9f8cf78563cc31beb7dfc6d7048c51ba536ff4f1f9f640b4ff9f8d574456c94e,No explicit license detected; do not infer from absence,no
+sys/vga_out.sv,02a533c3dfd547afddea2946019ecc79bbe9c27bb6128c0999fa5fc9e78f8108,No explicit license detected; do not infer from absence,no
+sys/video_cleaner.sv,44b986d9bf8412e56bf8e4eae3dc87e04b4c378e58ec6119de5a8aed320e3572,"GPL, version unspecified; refers to COPYING",yes
+sys/video_freak.sv,6a9b8565f66894a8f2ec10c916593e980d260f29f1886bfe70bf6f3b0cf6edc0,"GPL, version unspecified; refers to COPYING",yes
+sys/video_freezer.sv,0f3f4710b072b7e90b0b6bfe7607dec18dbd6bed78d1994f32d6fa72a6b7aef3,GPL-2.0-or-later (header),no
+sys/video_mixer.sv,31ed2c917bd6680b4d60328e71a4f28015bd5fcec21e15b290eacec88971167d,"GPL, version unspecified; refers to COPYING",yes
+sys/yc_out.sv,c52d7bfcc8dbc5a0cda2b3117172cbba790fb97b7de61722ddac205f6ec8bc20,GPL-2.0-or-later (header),yes
+tests/reset_cdc_experiment/quartus_probe/reset_probe.qsf,3bc18baae299847bd81689e2731a7a51970117f8067d15e9b91e7ecf2b0e4b88,No explicit license detected; do not infer from absence,no
+tests/reset_cdc_experiment/quartus_probe/reset_probe.sv,ce9de8878a187fac23607bf9c0e6abd00f8ffa39b1e853265d5a6be3dc0af3a6,No explicit license detected; do not infer from absence,no
+tests/reset_cdc_experiment/run_conditioner.py,0101e05f81341828598c7cd935ba48f6e67dc7a17b97c87ca4c7c67c33011930,No explicit license detected; do not infer from absence,no
+tests/reset_cdc_experiment/run_controller_replay.py,2bb17b21f9e2b47c33daccbe1b2356f24ab43c643b3c788c172d23c0eebe6649,No explicit license detected; do not infer from absence,no
+tests/reset_cdc_experiment/run_ddr_conditioned.py,dca173eca0785c6489a96a48d1e010785f7e026a9d8f8d5254a60fa778ffc436,No explicit license detected; do not infer from absence,no
+tests/reset_cdc_experiment/tb_conditioner.sv,126263ceb599fe29e36c56f62f8bbc345db7933b84a4ac867aa28e898826a774,No explicit license detected; do not infer from absence,no
+tests/run_backup_snapshot.py,3315aa938b9ae7ddd4bb43861d2ddc9a6db5587a679cbbc2442a9307e1645254,No explicit license detected; do not infer from absence,no
+tests/run_commit_matrix.py,d7e086bc3995378733108439cc602f65d5010328d884fecf6a5fdcee00a8ea3a,No explicit license detected; do not infer from absence,no
+tests/run_cpu_turbo.py,7b34b91393533464b6af01548dab0895f54bdcc13b880159382a2ab20d6764ad,No explicit license detected; do not infer from absence,no
+tests/run_ddr_ownership.py,9458b00bd208bcc7b7375a0737fb801f6b2797219bd10830da0d5173e44806b3,No explicit license detected; do not infer from absence,no
+tests/run_ddr_real_integration.py,eddd717f88c6b5f5c41cabbf509838fd07079b5a77f9d593defebb67589778a8,No explicit license detected; do not infer from absence,no
+tests/run_full_snapshot.py,1aacdf7dcf63f41baf09ff65044d6a1d382af9a522d9dfe2e29fbae45336da3b,No explicit license detected; do not infer from absence,no
+tests/run_input_reset.py,a805f3fba71f56d6a6b17ce28c22c72e58a182c0236f13db952b1d43c352613a,No explicit license detected; do not infer from absence,no
+tests/run_reloadable_controller.py,b97bff51e9d7f96dbbfbe1aceda36467cdf8f8533d113da8c80ffbdaef552a0e,No explicit license detected; do not infer from absence,no
+tests/run_reloadable_snapshot.py,dc4d22b8a3470719ac13cf8ae3f2c8ed96d552dc8bcb9546415784963a084d9e,No explicit license detected; do not infer from absence,no
+tests/run_reset_replay.py,076eeb863a06df26494d2c343ef28e074803bbbdf59668497efdea9f63d00029,No explicit license detected; do not infer from absence,no
+tests/run_reset_request_sync.py,1d7ab8857a38663ec974c669cd66164c2b6e2beb57ed9ccf5dfa371dd25d4dc5,No explicit license detected; do not infer from absence,no
+tests/run_sdram_turbo.py,0748ad717395e028e1123245e854229a3007b8ff12f3b41e19e81d439e58fc0d,No explicit license detected; do not infer from absence,no
+tests/tb_backup_snapshot.sv,f56552623c4b226706b97852e8e90256713fe5d45be22cca5fe9f772c03600d1,No explicit license detected; do not infer from absence,no
+tests/tb_cpu_turbo.vhd,d056576d6e85fb482858aafbbed836b62a5eb539e4d6c6ce81aac253061471b6,No explicit license detected; do not infer from absence,no
+tests/tb_ddr_ownership.sv,1d9739ce522557fa679c59804a7623a0c5c2347c43239f8eeea4fe0bf9fa582e,No explicit license detected; do not infer from absence,no
+tests/tb_ddr_real_integration.sv,cf2a89abd38a6ef8fcb5932c706427026ec5c1e3510377c86f87c1e4f41f046a,No explicit license detected; do not infer from absence,no
+tests/tb_ninja_controller.sv,e70f9084cbbfa08a11e9cf43449f6d47e367e20ee989a9f6091c3004b25d3d3f,No explicit license detected; do not infer from absence,no
+tests/tb_ram_replay.vhd,64cc9f891fb228ce0922437bd30ee81c5f2bd01780108c0ca4ba619d50156e5f,No explicit license detected; do not infer from absence,no
+tests/tb_reloadable_controller.sv,11c9754410df82ff8907f4b0cdda1ea59b4312f74388226b36892b2459c0951f,No explicit license detected; do not infer from absence,no
+tests/tb_reloadable_eligibility.sv,6f0afb4b66bb1d83cebbd729ac283534ea2107a614e0258f69cea23c3b7a0fd2,No explicit license detected; do not infer from absence,no
+tests/tb_reset_replay.sv,39012b57da777ae8526483badce212c7af25ca1542ac4f24c221617458a4bf19,No explicit license detected; do not infer from absence,no
+tests/tb_reset_request_sync.sv,48763cc2d8dd18c6ce4edd60918e514ef0091b5840525056cbb1a3e3e5fcb9e3,No explicit license detected; do not infer from absence,no
+tests/tb_sdram_turbo.sv,f183fb124f343acf934228aeea71699677daac3ee0c0216e5d677401121162f4,No explicit license detected; do not infer from absence,no
+tests/test_ascal_frame_boundary.py,fbbdfe104f198a9526a999fda680de51ddfc25f3af314c2fa8c65e099f1308b5,No explicit license detected; do not infer from absence,no
+tests/test_ascal_input_freeze.py,3e1ecdacef433eff0f3622a171d782989ee772727f9d55b05c0d350815e6295d,No explicit license detected; do not infer from absence,no
+tests/test_commit_guard.py,673d1252b5612c4068e4b4cf13b855b4f6fcd261e6190e1ba64024f59dd738a6,No explicit license detected; do not infer from absence,no
+tests/test_eligibility.py,2e80e30ddc04fd3780aa4538e1b7252b729b3cd0f688aab3a8ac95c7af6963b9,No explicit license detected; do not infer from absence,no
+tests/test_freeze_cdc.py,0f5b80dae7e5f64c2e89df791cb6f827b7738554e19638450fc9947d41aec305,No explicit license detected; do not infer from absence,no
+tests/test_sdc_stages.tcl,55a0c7b693a188491953b8e975960b7bdffcddb4b49386eb160c9eb0df86b9c9,No explicit license detected; do not infer from absence,no
+tests/test_snapshot_file.py,4468a8135da42e6eafb54878a923ecbfb9a8d4b47e08aeb4f3904546f72d1141,No explicit license detected; do not infer from absence,no
+tests/test_snapshot_map.py,6bee3aa75565fde73a3d54ad4a659284735b4b913ce1390ea2fc051aeb04ff79,No explicit license detected; do not infer from absence,no
+tests/test_video_freeze.py,8d583da69be45d499985069b3766bab4aff78dc65c94f8ad47d746e82545554e,No explicit license detected; do not infer from absence,no
+tests/upstream/HUC6280.vhd,c3d32c79fb01f4613ea3439c50db4042237e568bf1a2ee3911ed3bc1ed328b6c,No explicit license detected; do not infer from absence,no
+tools/package_interim.py,49ea2b35c8caf260696cc676924be3f8a75d0777512d9c1800b26d949bcfe8ae,No explicit license detected; do not infer from absence,no
