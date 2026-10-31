@@ -159,4 +159,4 @@ On 2026-10-29 the owner reported the +50% setting is working. The amount of game
 
 ## Current download
 
-Use `TurboGrafx16_TTL_20261029.rbf` and matching `TurboGrafx16_TTL_20261029_source.zip` from the website downloads directory. Both full build/timing results and SHA-256 checksums are published. The new Extra-default binary has not yet been hardware tested.
+Use `TTL_TurboGrafx16_ExtraSprites_20261029_EXPERIMENTAL.rbf` and matching `TTL_TurboGrafx16_ExtraSprites_20261029_EXPERIMENTAL_source.zip` from the website downloads directory. Both full build/timing results and SHA-256 checksums are published. The new Extra-default binary has not yet been hardware tested.

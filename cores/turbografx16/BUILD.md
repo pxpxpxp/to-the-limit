@@ -14,7 +14,7 @@ Local modifications distributed by To the Limit; no upstream push.
 - Ten CPU regression scenarios passed, including Off/reserved lockstep with upstream, live changes, waits, arithmetic/write traces and I/O/timer cadence. Actual SDRAM controller simulation passed 900 reads.
 - Hardware, DDR3 behavior, Ninja Spirit gameplay, audio compatibility and actual slowdown reduction remain untested.
 
-RBF: `TurboGrafx16_20261029.rbf`, 4,210,616 bytes.
+RBF: `TTL_TurboGrafx16_CPU_Turbo_20261029_EXPERIMENTAL.rbf`, 4,210,616 bytes.
 SHA-256: `e189f326af48bb58bae52bd03f9fbf57ec36ae7de53ba7ffcfc0e79e7756dbd8`.
 
 Earlier candidates had HDMI-scaler setup violations (-0.061 ns in Fast Fit and -0.280 ns at the cold corner in Auto Fit). The delivered binary uses Standard Fit, seed 2, and passed multi-corner analysis.

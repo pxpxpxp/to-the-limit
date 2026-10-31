@@ -11,7 +11,7 @@
 - Hardware feedback applies to the initial binary: owner reports +50% is working. This Extra-default revision has not yet been tested on physical hardware.
 - No measured game-speed improvement or broad CD/DDR3/game compatibility claim.
 
-RBF: `TurboGrafx16_TTL_20261029.rbf` (4,237,192 bytes).
+RBF: `TTL_TurboGrafx16_ExtraSprites_20261029_EXPERIMENTAL.rbf` (4,237,192 bytes).
 SHA-256: `37e3e6c4eabff63d87e0f59cd412546f99f09265e2518550687676fc95d1c0e2`.
 
 ## Build
