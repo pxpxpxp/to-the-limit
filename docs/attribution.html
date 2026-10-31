@@ -1,63 +1,24 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Attribution — To the Limit</title><link rel="stylesheet" href="style.css?v=20261031-attribution"></head><body><main class="wrap attribution-copy"><h1>COMMUNITY CREDIT.<br>ORIGINAL NOTICES.</h1><p><a href="index.html#cores">← Back to the experiments</a></p><p><a href="downloads/ATTRIBUTION.md">Download attribution</a> · <a href="downloads/LICENSES/GPL-2.txt">GPL v2</a> · <a href="downloads/LICENSES/GPL-3.txt">GPL v3</a> · <a href="downloads/LICENSES/LGPL-3.txt">LGPL v3</a></p><pre># TurboGrafx-16 / PC Engine — attribution and license inventory
-
-Audit: 2026-10-31. This is an independent **To the Limit** experimental derivative, not an official MiSTer release or an endorsement by the contributors below. Existing source copyright and license notices are retained. No game ROM or BIOS is supplied.
-
-## Core lineage and credits
-
-The recorded base is [MiSTer-devel/TurboGrafx16_MiSTer, commit 827d45f45799b8ab3a536510847f2108a92e81bd](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/827d45f45799b8ab3a536510847f2108a92e81bd), recorded in `docs/CPU_Turbo.md` and `docs/NinjaSpirit_SaveStates_initial.md`. Its [README at that commit](https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/blob/827d45f45799b8ab3a536510847f2108a92e81bd/ReadMe.md) was checked directly. This base identifier is provenance, not a claim that all current files are byte-identical to that revision.
-
-The upstream README credits:
-
-- **Gregory Estrade (Torlus)** — original [FPGAPCE](https://github.com/Torlus/FPGAPCE), from which the MiSTer core was ported.
-- **Sorgelig** — MiSTer port, Arcade Card, DDR3, mappers and other changes.
-- **srg320** — tweaks and CD support.
-- **greyrogue** — additional bug fixes.
-- **Kitrinx** — palettes and audio filters; [TG16_Palette](https://github.com/Kitrinx/TG16_Palette).
-- **dshadoff** — further refinements and maintenance.
-- **furrtek** — VDP reverse engineering used for the original palette; **ArtemioUrbina** — color-output verification.
-
-This is not an exhaustive list of everyone who has contributed upstream; consult upstream history. Local CPU Turbo, sprite-default and experimental save-state changes are documented separately in this package. No upstream contribution is claimed as original To the Limit work.
-
-## Bundled support components
-
-The per-file inventories and preserved-notice indexes accompanying this file cover the delivered interim source and the fuller work-in-progress separately. Header evidence includes:
-
-| Component | Preserved attribution / terms |
-| --- | --- |
-| Main top level, `rtl/huc6202.vhd`, color/audio filters; portions of `sys/` | Sorgelig / Alexey Melnikov; GPL-2.0-or-later where explicit |
-| SDRAM / DDR and HPS support | Sorgelig / Alexey Melnikov; Till Harbaum credited as SDRAM basis; GPL-3.0-or-later where explicit |
-| `sys/hps_io.sv`, `sys/scandoubler.v` | Till Harbaum and Alexey Melnikov; GPL-3.0-or-later |
-| `sys/sd_card.sv` | Till Harbaum and Sorgelig; **Lesser** GPL version 3 or later in header |
-| `sys/hq2x.sv` | Ludvig Strigeus and Sorgelig; GPL, header refers to COPYING without specifying version |
-| `sys/video_freak.sv` | Grabulosaure and Alexey Melnikov; GPL, header refers to COPYING |
-| `sys/video_mixer.sv`, `sys/video_cleaner.sv` | Alexey Melnikov / Sorgelig; GPL, header refers to COPYING |
-| `sys/ascal.vhd` | TEMLIB 2018–2020; custom permission to distribute/use for any purpose, with request to report bugs/enhancements to info@temlib.org; retain complete header |
-| `sys/spdif.v` | Ultra-Embedded.com, Copyright 2012; GPL-2.0-or-later |
-| `sys/f2sdram_safe_terminator.sv` | bellwood420, Copyright 2021; no explicit license statement located in this file |
-| `sys/yc_out.sv` | Mike Simone, Copyright 2022; GPL-2.0-or-later |
-| Generated PLL, reconfiguration and CD FIFO HDL | Intel / Altera; vendor-specific notices and restrictions retained in each file. **Not relicensed by this document or COPYING.** |
-
-Files without individual attribution/license headers (including several original CPU/VDC/PSG modules and support utilities) remain identified by path and hash. Absence of a header is **not** a public-domain determination, permission grant, or evidence of authorship by this project. Historical authorship beyond the verified README and file headers is unresolved; do not invent individual ownership assignments.
-
-## Save-state references and host firmware
-
-`docs/NinjaSpirit_SaveStates_initial.md` explicitly identifies SNES, GBA and PSX implementations as **architectural references, not code ports**. Preserve its links to [SNES savestates](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/rtl/savestates.sv), [SNES top level](https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/rtl/SNES.vhd), [GBA save states](https://github.com/MiSTer-devel/GBA_MiSTer/blob/master/rtl/gba_savestates.vhd), [GBA state registers](https://github.com/MiSTer-devel/GBA_MiSTer/blob/master/rtl/reg_savestates.vhd), and [PSX save states](https://github.com/MiSTer-devel/PSX_MiSTer/blob/main/rtl/savestates.vhd). “SNES-style menu” describes interface inspiration, not SNES code authorship or compatibility.
-
-The interim&#x27;s `savestate/firmware_persistence_audit/` contains extracted functions from official [Main_MiSTer commit 08271656799ede50358de1248f6ee878dd7ce5c4](https://github.com/MiSTer-devel/Main_MiSTer/tree/08271656799ede50358de1248f6ee878dd7ce5c4), not a newly authored firmware implementation. Its README preserves exact source lines and blob IDs for `process_ss.inc` / `user_io.cpp` and `file_path.inc` / `file_io.cpp`; its full upstream GPL-3.0 LICENSE is retained.
-
-The fuller WIP additionally retains official Main firmware source under `savestate/guarded_cdc_validation/hps_guard/firmware_source/` for protocol inspection. `osd.cpp` preserves **Dennis van Weeren (2005–2007)** and **Jakub Bednarski (2008–2009)** notices. See the adjacent `NO_DISC_STARTUP_AUDIT.md` for the pinned commit. These are evidence/test inputs, not FPGA synthesis inputs.
-
-## License texts, scope and remaining uncertainty
-
-`LICENSES/GPL-2.txt`, `LICENSES/GPL-3.txt`, and `LICENSES/LGPL-3.txt` reproduce the complete GNU license texts from this environment&#x27;s `/usr/share/common-licenses`. Root `COPYING` indexes both GPL versions and LGPL without choosing a version for ambiguous files; it does not remove any file&#x27;s stated version choice, change authorship, override custom/vendor terms, or assign a license to files with unresolved terms. LGPL v3 is read together with GPL v3. Preserve all source notices and these texts when redistributing the corresponding source. Distribute an RBF with access to its matching source, not a later unrelated WIP snapshot.
-
-The audit found preserved upstream README credits and embedded notices, but the delivered interim lacked top-level COPYING and complete standalone GPL-2/LGPL-3 texts. These documentation additions close those identified packaging omissions. The GPL3 firmware license already present is retained unchanged. Explicit license/version terms remain unresolved for some no-header or generic-GPL files; this inventory is not a legal clearance or a guarantee that every historical contributor has been identified. Intel/Altera generated IP retains separate terms.
-
-Documentation-only additions do not alter the interim RBF SHA-256:
-`a20b06692b6be4c720de500504dfcfc468d7d0ec20532f6bcb7b0db34caa63d9`.
-No HDL, build constraints, generated hardware files or active synthesis inputs were edited for attribution.
-
-## Upstream notice cross-check
-
-The first 80 lines of all 75 `rtl/` and `sys/` HDL/header paths in the delivered interim were requested at the recorded upstream commit. 72 existed upstream; 3 were local additions. Every copyright, explicit GPL-label and TEMLIB permission line found in those upstream prefixes was retained in the corresponding complete interim file (zero missing/changed matching notice lines). This bounded cross-check complements the full-text local inventory; it is not a complete authorship-history reconstruction.
-</pre></main></body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Attribution — To the Limit</title><link rel="stylesheet" href="style.css?v=20261031-attribution"></head><body><main class="wrap attribution-copy"><h1>COMMUNITY CREDIT.<br>ORIGINAL NOTICES.</h1><p><a href="index.html#cores">← Back to the experiments</a></p><p><a href="downloads/ATTRIBUTION.md">Download attribution</a> · <a href="downloads/LICENSES/GPL-2.txt">GPL v2</a> · <a href="downloads/LICENSES/GPL-3.txt">GPL v3</a> · <a href="downloads/LICENSES/LGPL-3.txt">LGPL v3</a></p><div class="attribution-text"><h2>TurboGrafx-16 / PC Engine — attribution and license inventory</h2>
+<p>Audit: 2026-10-31. This is an independent <b>To the Limit</b> experimental derivative, not an official MiSTer release or an endorsement by the contributors below. Existing source copyright and license notices are retained. No game ROM or BIOS is supplied.</p>
+<h2>Core lineage and credits</h2>
+<p>The recorded base is <a href="https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/tree/827d45f45799b8ab3a536510847f2108a92e81bd">MiSTer-devel/TurboGrafx16_MiSTer, commit 827d45f45799b8ab3a536510847f2108a92e81bd</a>, recorded in <code>docs/CPU_Turbo.md</code> and <code>docs/NinjaSpirit_SaveStates_initial.md</code>. Its <a href="https://github.com/MiSTer-devel/TurboGrafx16_MiSTer/blob/827d45f45799b8ab3a536510847f2108a92e81bd/ReadMe.md">README at that commit</a> was checked directly. This base identifier is provenance, not a claim that all current files are byte-identical to that revision.</p>
+<p>The upstream README credits:</p>
+<ul><li><b>Gregory Estrade (Torlus)</b> — original <a href="https://github.com/Torlus/FPGAPCE">FPGAPCE</a>, from which the MiSTer core was ported.</li><li><b>Sorgelig</b> — MiSTer port, Arcade Card, DDR3, mappers and other changes.</li><li><b>srg320</b> — tweaks and CD support.</li><li><b>greyrogue</b> — additional bug fixes.</li><li><b>Kitrinx</b> — palettes and audio filters; <a href="https://github.com/Kitrinx/TG16_Palette">TG16_Palette</a>.</li><li><b>dshadoff</b> — further refinements and maintenance.</li><li><b>furrtek</b> — VDP reverse engineering used for the original palette; <b>ArtemioUrbina</b> — color-output verification.</li></ul>
+<p>This is not an exhaustive list of everyone who has contributed upstream; consult upstream history. Local CPU Turbo, sprite-default and experimental save-state changes are documented separately in this package. No upstream contribution is claimed as original To the Limit work.</p>
+<h2>Bundled support components</h2>
+<p>The per-file inventories and preserved-notice indexes accompanying this file cover the delivered interim source and the fuller work-in-progress separately. Header evidence includes:</p>
+<div style="overflow-x:auto"><table><tr><td>Component</td><td>Preserved attribution / terms</td></tr><tr><td>Main top level, <code>rtl/huc6202.vhd</code>, color/audio filters; portions of <code>sys/</code></td><td>Sorgelig / Alexey Melnikov; GPL-2.0-or-later where explicit</td></tr><tr><td>SDRAM / DDR and HPS support</td><td>Sorgelig / Alexey Melnikov; Till Harbaum credited as SDRAM basis; GPL-3.0-or-later where explicit</td></tr><tr><td><code>sys/hps_io.sv</code>, <code>sys/scandoubler.v</code></td><td>Till Harbaum and Alexey Melnikov; GPL-3.0-or-later</td></tr><tr><td><code>sys/sd_card.sv</code></td><td>Till Harbaum and Sorgelig; <b>Lesser</b> GPL version 3 or later in header</td></tr><tr><td><code>sys/hq2x.sv</code></td><td>Ludvig Strigeus and Sorgelig; GPL, header refers to COPYING without specifying version</td></tr><tr><td><code>sys/video_freak.sv</code></td><td>Grabulosaure and Alexey Melnikov; GPL, header refers to COPYING</td></tr><tr><td><code>sys/video_mixer.sv</code>, <code>sys/video_cleaner.sv</code></td><td>Alexey Melnikov / Sorgelig; GPL, header refers to COPYING</td></tr><tr><td><code>sys/ascal.vhd</code></td><td>TEMLIB 2018–2020; custom permission to distribute/use for any purpose, with request to report bugs/enhancements to info@temlib.org; retain complete header</td></tr><tr><td><code>sys/spdif.v</code></td><td>Ultra-Embedded.com, Copyright 2012; GPL-2.0-or-later</td></tr><tr><td><code>sys/f2sdram_safe_terminator.sv</code></td><td>bellwood420, Copyright 2021; no explicit license statement located in this file</td></tr><tr><td><code>sys/yc_out.sv</code></td><td>Mike Simone, Copyright 2022; GPL-2.0-or-later</td></tr><tr><td>Generated PLL, reconfiguration and CD FIFO HDL</td><td>Intel / Altera; vendor-specific notices and restrictions retained in each file. <b>Not relicensed by this document or COPYING.</b></td></tr></table></div>
+<p>Files without individual attribution/license headers (including several original CPU/VDC/PSG modules and support utilities) remain identified by path and hash. Absence of a header is <b>not</b> a public-domain determination, permission grant, or evidence of authorship by this project. Historical authorship beyond the verified README and file headers is unresolved; do not invent individual ownership assignments.</p>
+<h2>Save-state references and host firmware</h2>
+<p><code>docs/NinjaSpirit_SaveStates_initial.md</code> explicitly identifies SNES, GBA and PSX implementations as <b>architectural references, not code ports</b>. Preserve its links to <a href="https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/rtl/savestates.sv">SNES savestates</a>, <a href="https://github.com/MiSTer-devel/SNES_MiSTer/blob/master/rtl/SNES.vhd">SNES top level</a>, <a href="https://github.com/MiSTer-devel/GBA_MiSTer/blob/master/rtl/gba_savestates.vhd">GBA save states</a>, <a href="https://github.com/MiSTer-devel/GBA_MiSTer/blob/master/rtl/reg_savestates.vhd">GBA state registers</a>, and <a href="https://github.com/MiSTer-devel/PSX_MiSTer/blob/main/rtl/savestates.vhd">PSX save states</a>. “SNES-style menu” describes interface inspiration, not SNES code authorship or compatibility.</p>
+<p>The interim&#x27;s <code>savestate/firmware_persistence_audit/</code> contains extracted functions from official <a href="https://github.com/MiSTer-devel/Main_MiSTer/tree/08271656799ede50358de1248f6ee878dd7ce5c4">Main_MiSTer commit 08271656799ede50358de1248f6ee878dd7ce5c4</a>, not a newly authored firmware implementation. Its README preserves exact source lines and blob IDs for <code>process_ss.inc</code> / <code>user_io.cpp</code> and <code>file_path.inc</code> / <code>file_io.cpp</code>; its full upstream GPL-3.0 LICENSE is retained.</p>
+<p>The fuller WIP additionally retains official Main firmware source under <code>savestate/guarded_cdc_validation/hps_guard/firmware_source/</code> for protocol inspection. <code>osd.cpp</code> preserves <b>Dennis van Weeren (2005–2007)</b> and <b>Jakub Bednarski (2008–2009)</b> notices. See the adjacent <code>NO_DISC_STARTUP_AUDIT.md</code> for the pinned commit. These are evidence/test inputs, not FPGA synthesis inputs.</p>
+<h2>License texts, scope and remaining uncertainty</h2>
+<p><code>LICENSES/GPL-2.txt</code>, <code>LICENSES/GPL-3.txt</code>, and <code>LICENSES/LGPL-3.txt</code> reproduce the complete GNU license texts from this environment&#x27;s <code>/usr/share/common-licenses</code>. Root <code>COPYING</code> indexes both GPL versions and LGPL without choosing a version for ambiguous files; it does not remove any file&#x27;s stated version choice, change authorship, override custom/vendor terms, or assign a license to files with unresolved terms. LGPL v3 is read together with GPL v3. Preserve all source notices and these texts when redistributing the corresponding source. Distribute an RBF with access to its matching source, not a later unrelated WIP snapshot.</p>
+<p>The audit found preserved upstream README credits and embedded notices, but the delivered interim lacked top-level COPYING and complete standalone GPL-2/LGPL-3 texts. These documentation additions close those identified packaging omissions. The GPL3 firmware license already present is retained unchanged. Explicit license/version terms remain unresolved for some no-header or generic-GPL files; this inventory is not a legal clearance or a guarantee that every historical contributor has been identified. Intel/Altera generated IP retains separate terms.</p>
+<p>Documentation-only additions do not alter the interim RBF SHA-256:
+<code>a20b06692b6be4c720de500504dfcfc468d7d0ec20532f6bcb7b0db34caa63d9</code>.
+No HDL, build constraints, generated hardware files or active synthesis inputs were edited for attribution.</p>
+<h2>Upstream notice cross-check</h2>
+<p>The first 80 lines of all 75 <code>rtl/</code> and <code>sys/</code> HDL/header paths in the delivered interim were requested at the recorded upstream commit. 72 existed upstream; 3 were local additions. Every copyright, explicit GPL-label and TEMLIB permission line found in those upstream prefixes was retained in the corresponding complete interim file (zero missing/changed matching notice lines). This bounded cross-check complements the full-text local inventory; it is not a complete authorship-history reconstruction.
+</p></div></main></body></html>
