@@ -1,0 +1,35 @@
+TO THE LIMIT — TTL_TurboGrafx16_GUARDED_SEED5_20261031_EXPERIMENTAL
+Delivered experimental successor, 2026-10-31. Not the later DataSwap/video WIP.
+RBF: TTL_TurboGrafx16_GUARDED_SEED5_20261031_EXPERIMENTAL.rbf
+SHA-256: d9a985df17512f23fcbbc299e081215f6ca1904042b47a00acc03e118268f438
+Source: TTL_TurboGrafx16_GUARDED_SEED5_20261031_EXPERIMENTAL_source.zip (light source v2; complete source/license notices, reduced evidence bundle)
+SHA-256: df390a5ae8e8bf08d374a21b90247b6d80dbaee307608857cd64bb962af41a5a
+
+Previous interim format: 354,888 bytes, schema 60fef42d3266aca5.
+This successor: 416,640 bytes, schema a58e5a8c9764267f. Incompatible; do not reuse or overwrite earlier states.
+
+# Guarded HuCard snapshot candidate — experimental test only
+
+This is a successor to the published Cartridge 001 interim build, **not a final or universally compatible release**. It has not been tested on a MiSTer, with an actual game, deployed Main firmware, an SD card, or a physical power cycle. The earlier Cart 001 hardware run reported by the user does not establish that this newer build or its four slots work.
+
+This build preserves the existing CPU Turbo and extra-sprites features. It extends the earlier snapshot scan to additional RAM, registers and audio/CD-side state; adds guarded no-disc, freeze/clock-domain handling and post-restore hold logic; and registers the DDR write acknowledgment used by the cartridge loader. These changes and directed models do not prove game-level fidelity. The downstream display pipeline and CD FIFO are not fully saved. CD game save states are not supported.
+
+## Protect existing data
+
+1. Back up the existing core RBF and your **entire** `saves` and `savestates` folders elsewhere before testing. Use a uniquely named disposable ROM and disposable progress; battery-backed RAM may be changed by a restore. Do not rely on a snapshot as your only copy.
+2. Use SDRAM, no mounted CD, and the reviewed default clocks/video settings; do not overclock or select an unreviewed higher HDMI PLL mode. Use a normal HuCard configuration. Choose the ROM data-swap setting before loading the cartridge; after changing it, reload the ROM before saving or loading states, and discard states created between the setting change and the reload. Always use the same loaded bytes and configuration. Ninja Spirit is the first test target, not proof for every HuCard. Populous RAM, DDR-backed/oversized ROMs, SuperGrafx, SNAC, MB128, special controllers and cheats are outside this build's supported snapshot guard. A guard can leave save/load unavailable, including after some no-disc CD status events.
+3. Select slot 1–4 in the OSD; F5 requests save and F8 requests load. The format is **not compatible** with the published interim: this candidate's schema is `a58e5a8c9764267f` and its file is 416,640 bytes. Do not reuse or overwrite old state files; test with a separate name. Check the selected file with `python3 savestate/snapshot_file.py FILE` if available.
+4. During a state operation or any SD/host write, do not reset, power off, switch core or game, change configuration, invoke backup load/save/format, or issue another state request. There is no FPGA-visible host durable-write acknowledgment in the inspected unmodified Main. A save message does **not** prove the file reached storage, and waiting a fixed time does not prove it either; avoid repeatedly overwriting the same slot. Use independent backups and verify file contents/reload on disposable progress.
+5. Stop immediately and restore the old core and backups if a save is missing, invalid, seems to do nothing, the core hangs, or display/audio/input/game behavior changes unexpectedly. Never test by interrupting writes with irreplaceable data.
+
+## What the build and tests do—and do not—establish
+
+Quartus Prime Lite 23.1std Build 991 map, seed-5 fit, standard multicorner timing and assembly completed; the minimum reported standard slack is +0.024 ns. Standard analysis warns that the whole design is not fully constrained. A separate assistant-reviewed bounded timing/CDC audit and its limitations are in `savestate/seed5_timing_provenance/`. This is not human or hardware signoff; use only native current-schema images, not forged state files with inconsistent internal enable/divider values. Directed tests model four slots, controller phases, loader acknowledgments and selected freeze/rollback cases; behavioral DDR/HPS, synthetic game traffic and limited reset cases are not a real host or hardware test. CRC and schema checking are integrity checks, not proof of durable storage, lossless event handling, or whole-machine correctness.
+
+The inspected Main may accept a backup action concurrently with a freeze-start edge; brief backup actions wholly inside freeze can be lost. A host download can also race shared-slot ownership, and unmodified Main does not expose a durable write ACK. The operational restrictions above reduce exposure but do not turn these known gaps into a guarantee.
+
+## Rebuilding this exact configuration
+
+The actual reviewed fit used seed 5 and **physical register retiming OFF**, despite the original QSF requesting other defaults. Use the supplied `savestate/build.py` and Quartus 23.1std, not an unmodified default QSF build: `TGFX_QUARTUS_BIN=/path/to/quartus/bin python3 savestate/build.py`. A successful build is not hardware validation. The supplied `package_reloadable.py` remains intentionally blocked against a false final release.
+
+Earlier WIP notices and logs in this tree describe their respective historical stages; this notice and the fresh seed-5 provenance identify the current candidate. Attribution and third-party license notices remain in this source bundle; unverified ownership and license questions are not silently resolved.
