@@ -24,3 +24,8 @@
 .hero::before,.hero::after{display:block;width:1em;height:1em;line-height:1;text-align:center;transform-origin:50% 50%;animation:hero-sparkle-turn 18s linear infinite}
 @keyframes hero-sparkle-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){.hero::before,.hero::after{animation:none;transform:none}}
+
+/* A small seasonal flourish; decorative artwork never replaces the build status. */
+.halloween-pumpkin{display:block;width:52px;height:52px;margin-left:auto;flex:0 0 52px;image-rendering:pixelated}@media(max-width:480px){.halloween-pumpkin{width:44px;height:44px;flex-basis:44px}}
+
+#cartridge-001 .badges{align-items:center}
