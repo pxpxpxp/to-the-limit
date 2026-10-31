@@ -1,0 +1,18 @@
+CARTRIDGE 003 — INTERIM TEST
+
+RBF SHA-256: a20b06692b6be4c720de500504dfcfc468d7d0ec20532f6bcb7b0db34caa63d9
+Source archive SHA-256: 86faf8e396cbc0ae53cab682eec67a9bd25cbc860d4e87c9d15a13ee47c59c87
+
+The supplied build metadata matches the RBF checksum and size (4,189,068 bytes).
+Source menu includes Save State (F5), Load State (F8), and slots 1–4.
+The package describes experimental SD-backed snapshots for Ninja Spirit HuCard only.
+Reports record successful fit, multi-corner timing and assembly; minimum reported slack +0.077 ns. These reports were inspected, not independently rerun.
+Hardware and firmware persistence are not tested. No-disc CD/IRQ/CD-visible RAM and complete audio/display pipeline replay remain incomplete.
+
+TEST PRECAUTIONS
+Back up the stock RBF and entire saves/ and savestates/ directories. Use SDRAM, no CD, standard controller, MB128/SNAC/special controllers disabled, and a uniquely named ROM copy with disposable progress. Identical ROM basenames may collide across folders. Snapshot formats may be incompatible with prior versions. Restoring can alter battery RAM and later persist it.
+Do not reset, power off, switch cores or change configuration during save/load or subsequent SD writes. Do not overwrite a slot while its prior write is in progress. Wait for gameplay and completed disk activity. The Saving the state message is not proof of a completed file write. Verify the expected slot file exists, is 354,888 bytes and has a changed modification time; use the included savestate/snapshot_file.py checksum checker where accessible. Preserve backups before separate power-cycle recovery tests.
+A rejected/empty slot may silently do nothing; treat that as failure. Revert on corrupt/missing saves, failed reload, resets, hangs or audio/graphics errors.
+No snapshot activity LED is provided. In-flight video writes/frame handoff and physical reset/SDRAM/HPS DDR behavior remain incompletely verified.
+
+The source notice contains older 'not yet built' wording alongside later fitted-test results. This page reports the included metadata and results, and does not claim a complete or hardware-validated release.
