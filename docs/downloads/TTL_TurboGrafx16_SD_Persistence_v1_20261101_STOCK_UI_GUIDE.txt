@@ -1,0 +1,69 @@
+Public download RBF filename: TTL_TurboGrafx16_SD_Persistence_v1_20261101_STOCK_UI.rbf
+The package keeps the original internal filename; the binary bytes are identical.
+
+TO THE LIMIT — TG16 SD Persistence v1 / STOCK MAIN GUIDE
+Updated 2026-11-01
+
+NO NEW MAIN REQUIRED FOR THE ORDINARY PATH
+Use TurboGrafx16_SD_StockMain_UI_20261101.rbf with stock Main.
+UI-only rebuilt RBF, SHA-256:
+e1e89008f53f7e16714dc0b02c55f73a1c560da9064ca7d84911cb50c33d131e
+
+This package contains only the RBF, corresponding core source, licenses,
+stock guide and verification summary. Keep your existing Main.
+
+WHAT WAS VERIFIED
+Pinned upstream Main afb917fce1f3089e3d242331ddae6456ac0da8e4:
+unchanged stock process_ss and FileSave handled all four 416,640-byte
+production-controller snapshots using real filesystem save/import; fresh
+controller RTL restored every modeled value. No production code changed.
+This is a native host-function harness and modeled RTL test, not execution
+of the whole Main on ARM, the entire RBF, or physical MiSTer/SD testing.
+Other Main versions have not been exhaustively checked.
+This stock-Main combination has not yet been hardware-qualified.
+
+INSTALL / FIRST TEST
+1. Back up the card, original RBF, saves and savestates. Prefer a test card.
+2. Keep your stock card-root MiSTer binary. Copy the release RBF to _Console.
+3. Use disposable progress in a uniquely named Ninja Spirit .pce, normal
+   SDRAM HuCard mode, default clocks, no cheats, CD, SNAC, MB128, SuperGrafx
+   or special devices. This is not a claim of all-HuCard or CD support.
+4. Set ROM Data Swap before loading. If changed afterward, reload the ROM
+   and discard any states made between the change and reload.
+5. Start fresh: old experimental state formats are incompatible. Back them
+   up separately; do not overwrite your only good progress.
+6. Test each of the four slots, then verify reload using disposable progress
+   before relying on persistence. Do not reset, switch ROM/core, repeat slot
+   actions or cut power while a save is being processed.
+
+STOCK MAIN SAFETY LIMITS
+The OSD now says "Main writes snapshots to SD". This is descriptive only,
+not confirmation that any particular save completed. The existing
+"Reload core to retry" line remains unchanged; it is not automatic host retry.
+Stock's "Saving the state" message appears BEFORE the file write and is
+not a completion acknowledgement.
+Stock does NOT emit a "Saved to SD" message. Do not wait for
+a message that will not appear. Capture completion is NOT confirmed SD
+completion. There is no fixed number of seconds that guarantees durability.
+Use normal shutdown rather than abrupt power removal and verify reloads.
+Stock marks the generation before writing: failed writes are not retried
+automatically for that same generation. After resolving a storage problem,
+a fresh save generation is needed; don't trust an earlier failed save.
+Stock accepts payloads without TG-specific host CRC validation. The tested
+host uses O_SYNC temporary-file writes and rename, but does not sync the
+parent directory. Card/stack behavior and abrupt power loss remain risks.
+No full CDC closure or real concurrent ARM/FPGA memory-race guarantee.
+
+ROLLBACK
+Restore the original core and backed-up save folders; Main was never
+replaced. Preserve experimental states separately.
+
+SOURCE / EVIDENCE
+Matching full core sources and licenses are in the STOCK_UI_SOURCE.zip package.
+Stock interoperability evidence inventory: STOCK_MAIN_VERIFICATION.json.
+Four-slot release only. CD support is not included.
+
+UI-ONLY BUILD SCOPE
+Only the former Saved-to-SD instruction changed. The payload, protocol,
+controller behavior, timing constraints and retry logic are unchanged.
+This rebuilt RBF has not been run on hardware. Keep your stock Main.
