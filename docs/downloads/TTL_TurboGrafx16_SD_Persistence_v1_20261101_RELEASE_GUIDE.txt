@@ -1,0 +1,142 @@
+TO THE LIMIT — A POST-SPOOKY SURPRISE
+Paired SD Persistence v1, four slots, 2026-11-01.
+Published standalone filename TTL_TurboGrafx16_SD_Persistence_v1_20261101_RELEASE.rbf is the same bytes as TurboGrafx16_SD_Persistent_20261101.rbf inside the package.
+Companion Main is REQUIRED. Read release status first: it supersedes the older build-time test status in the preserved installation guide below. No device installation is performed by this download.
+
+# TTL TurboGrafx16 SD Persistence v1 — 2026-11-01 release
+
+## Release status and tested scope
+
+This release packages the exact previously delivered RBF and companion Main
+bytes, without rebuilding or changing code. On 2026-11-01 the user confirmed
+“Yes” and “Works” when asked whether the paired RBF and Main worked with
+Ninja Spirit for save/load, core reload, and a normal power cycle after
+“Saved to SD”. These are user-reported hardware results, not an independently
+observed or instrumented hardware test.
+
+The release scope is that reported Ninja Spirit configuration. It is not a
+guarantee for every HuCard, CD games, special devices, all slots/overwrites,
+or abrupt power loss. The earlier simulation/build evidence and its limits
+remain unchanged. Storage durability depends on the card and stack honoring
+syncs. Full CDC closure and broad compatibility have not been established.
+
+## Required paired installation and safe testing
+
+Use BOTH included binaries:
+- TurboGrafx16_SD_Persistent_20261101.rbf
+- MiSTer_TG16_SD_20261101 (install as the card-root MiSTer binary and reboot)
+
+Follow INSTALL_TEST_GUIDE.md. Back up the original root MiSTer binary, core,
+and complete saves and savestates folders before installation; use a test card
+and disposable progress. First tests should use a uniquely named Ninja Spirit
+.pce, normal SDRAM HuCard mode and default clocks, without cheats, CD, SNAC,
+MB128, SuperGrafx or special devices.
+
+Wait for “Saved to SD” before reset, ROM/core changes, another save, or power
+off. Snapshot completion alone is insufficient. If “SD save failed - retrying”
+appears, do not interrupt it; the companion Main retries automatically.
+Protocol 3 rejects old experimental format-2 states; keep backups and start
+fresh. To roll back, restore the original Main, core, and save folders.
+
+## Provenance and unchanged bytes
+
+Source package: TG16_SD_Persistence_20261101_Test_Package.zip
+Library ID: libfile_58ef75e95968819182ccf003dd2c1f0a
+Source ZIP SHA-256:
+ad8acad297d13e62a0be1e7cf752e2d3f1bbc45f9aa65bd57a7a1246ba6dd3ab
+
+RBF SHA-256:
+e9877034fd94ef4502527d342d1e9bc266e41913eb7766f1740c773aa8b6b9cb
+Companion Main SHA-256:
+f0c61725fa03e7f745c920e2103575203ee3ef154995ed06a1adc84d53973a16
+
+All original package members, including sources, licenses, patch, historical
+guide, build reports and evidence, are preserved byte-for-byte. Historical
+statements that hardware testing had not occurred describe the build-time
+status; the user-reported results above are the later update. The original
+DELIVERY_SHA256.json is preserved; RELEASE_SHA256.json covers every member
+except itself, including this release note and the original manifest.
+
+The archived 159-entry build-source inventory includes three generated db/
+intermediates omitted from the original package; the actual delivered files
+match the original delivery manifest. No rebuild or new validation suite was
+run to create this release. No separate backup/ROM-switch or loader-initialization
+branch was resumed or promoted. No public/GitHub publication or deployment
+is performed by packaging this release.
+
+
+--- ORIGINAL PAIRED INSTALLATION / ROLLBACK GUIDE ---
+
+# TurboGrafx-16 SD save states — v1
+
+Use the new RBF **and** the companion Main binary together. This is an
+experimental HuCard test build; Ninja Spirit is the first target. Physical
+MiSTer gameplay and power-cycle testing have not been performed here.
+
+## Install on a test SD card
+
+1. Back up the card's root `MiSTer` binary, your current core, and the complete
+   `saves` and `savestates` folders. Use disposable progress for the first test.
+2. Copy the supplied `MiSTer_TG16_SD_20261101` binary to the card's root, naming
+   it **MiSTer**. Reboot MiSTer so the companion Main is running.
+3. Put `TurboGrafx16_SD_Persistent_20261101.rbf` in `_Console` and select it.
+4. Load a uniquely named Ninja Spirit `.pce` copy. Use normal SDRAM HuCard mode,
+   default clocks, no cheats, disc, SNAC, MB128, SuperGrafx or special devices.
+
+## Verify persistence
+
+1. In Save States, choose slot 1. Press **F5**, or choose Save State in the OSD.
+2. Wait for **Saved to SD**. This comes from the companion Main after the file
+   and its directory have been synced; snapshot completion alone is insufficient.
+3. Change the game state, then use **F8** or Load State to check same-session
+   restoration. F5 and F8 use the selected slot with the OSD closed.
+4. After Saved to SD, reload the core and the exact same ROM/configuration.
+   Select the same slot and load. Then test a normal shutdown/power cycle.
+5. Repeat for slots 2–4 and try an overwrite after each preceding save has
+   completed. Files normally appear as
+   `savestates/TGFX16/<ROM name>_1.ss` through `_4.ss`, 416,640 bytes each.
+
+If SD writing fails, Main displays **SD save failed - retrying** and retries
+without requiring another F5. Do not power off, reset, change ROM/core, or
+start another save while waiting for completion. If capture itself aborts,
+reload the same ROM to reimport the previous SD file.
+
+The format is protocol 3. Old experimental format-2 states are rejected by the
+new core; keep backups and start fresh. CPU Turbo and extra-sprite behavior
+remain from the baseline, but the first hardware test should use defaults.
+CD save states and the separate experimental ROM/backup-switch work are outside
+this build. To roll back, restore your original Main, core and save folders.
+
+## What changed
+
+The core invalidates a slot's DDR header before rewriting it and commits the
+new header last. Main takes a private, CRC-checked copy, writes a temporary
+file, syncs it, renames it, syncs its directory, then marks it saved. Failed
+writes retry; failures before rename preserve the previous file. On ROM load,
+Main reimports the four files and the core validates them before restoration.
+
+The companion Main comes from upstream commit
+`afb917fce1f3089e3d242331ddae6456ac0da8e4` with the supplied TG16-only patch.
+Other cores and earlier TG16 formats retain the original handler. The complete
+corresponding sources, licenses, patch, tests and build logs are included.
+
+## Reproduce
+
+- FPGA: install Quartus Prime Lite 23.1std Build 991 and Cyclone V support,
+  then run `QUARTUS_BIN=/path/to/quartus/bin python3 build_rbf.py`.
+  The script maps, fits with retiming off, checks multicorner timing, then
+  assembles. It tries another ordinary fitter seed if reported timing fails.
+  This build host required `toolchain/quartus_self_path.c`: a per-process
+  adapter resolving only Quartus's own numbered `/proc/<pid>/exe` reference
+  via `/proc/self/exe`. It leaves all other paths unchanged. Normal local
+  installations should omit the adapter. Its source and the initial failure
+  log are included for reproducibility.
+- Main: use Arm's `gcc-arm-10.2-2020.11-x86_64-arm-none-linux-gnueabihf`
+  toolchain on PATH, then run `make -j2` in `Main_MiSTer_source`.
+- Tests: with `g++` and Icarus Verilog 12 on PATH, run
+  `python3 run_validation.py`. The test copies production RTL snapshots through
+  the patched Main handler and real filesystem files into a fresh simulation.
+
+Passing simulations, compilation and normal timing reports do not establish
+real SD power-loss behavior, every game/mapper, or full CDC closure. Filesystem
+sync completion also depends on the card and storage stack honoring it.
