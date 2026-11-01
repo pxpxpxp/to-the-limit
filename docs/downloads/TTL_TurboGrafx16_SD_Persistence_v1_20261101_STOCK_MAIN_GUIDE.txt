@@ -6,10 +6,8 @@ Use TTL_TurboGrafx16_SD_Persistence_v1_20261101_RELEASE.rbf with stock Main.
 The RBF is unchanged, SHA-256:
 e9877034fd94ef4502527d342d1e9bc266e41913eb7766f1740c773aa8b6b9cb
 
-This guide supersedes earlier statements that companion Main is mandatory.
-The archived paired ZIP remains unchanged for provenance, corresponding
-sources, licenses and optional enhanced Main. Do not install its Main binary
-if you intend to keep stock Main.
+This package contains only the RBF, corresponding core source, licenses,
+stock guide and verification summary. Keep your existing Main.
 
 WHAT WAS VERIFIED
 Pinned upstream Main afb917fce1f3089e3d242331ddae6456ac0da8e4:
@@ -19,8 +17,7 @@ controller RTL restored every modeled value. No production code changed.
 This is a native host-function harness and modeled RTL test, not execution
 of the whole Main on ARM, the entire RBF, or physical MiSTer/SD testing.
 Other Main versions have not been exhaustively checked.
-The owner's Ninja Spirit save/load, core-reload and normal power-cycle
-success was reported for the OPTIONAL companion Main combination, not stock.
+This stock-Main combination has not yet been hardware-qualified.
 
 INSTALL / FIRST TEST
 1. Back up the card, original RBF, saves and savestates. Prefer a test card.
@@ -38,10 +35,11 @@ INSTALL / FIRST TEST
 
 STOCK MAIN SAFETY LIMITS
 The current RBF has a legacy OSD line "Wait for Saved to SD in Main".
-That line applies ONLY to optional companion Main, not stock Main.
+That legacy instruction does not apply on stock Main; no such notification
+is available.
 Stock's "Saving the state" message appears BEFORE the file write and is
 not a completion acknowledgement.
-Stock does NOT emit the companion's "Saved to SD" message. Do not wait for
+Stock does NOT emit a "Saved to SD" message. Do not wait for
 a message that will not appear. Capture completion is NOT confirmed SD
 completion. There is no fixed number of seconds that guarantees durability.
 Use normal shutdown rather than abrupt power removal and verify reloads.
@@ -53,27 +51,11 @@ host uses O_SYNC temporary-file writes and rename, but does not sync the
 parent directory. Card/stack behavior and abrupt power loss remain risks.
 No full CDC closure or real concurrent ARM/FPGA memory-race guarantee.
 
-OPTIONAL ENHANCED MAIN
-The archived RELEASE.zip contains matching full FPGA/Main sources, notices,
-licenses, evidence, RBF and MiSTer_TG16_SD_20261101.
-That custom Main adds host validation, failed-write retries and an explicit
-"Saved to SD" acknowledgement. If deliberately choosing that paired path,
-follow its paired-install guide, back up original Main, install custom Main
-as card-root MiSTer and reboot. Only on that path, wait for Saved to SD
-before reset/core or ROM change/another save/power-off, and leave retries
-uninterrupted. Even that acknowledgement is not an abrupt-power-loss guarantee.
-Main SHA-256:
-f0c61725fa03e7f745c920e2103575203ee3ef154995ed06a1adc84d53973a16
-
 ROLLBACK
-For the stock path, restore the original core and backed-up save folders;
-Main was never replaced. For the optional paired path, also restore your
-original card-root MiSTer and reboot. Preserve experimental states separately.
+Restore the original core and backed-up save folders; Main was never
+replaced. Preserve experimental states separately.
 
 SOURCE / EVIDENCE
-Matching sources/licenses remain in
-TTL_TurboGrafx16_SD_Persistence_v1_20261101_RELEASE.zip
-ZIP SHA-256:
-aea6a6925f8c21dbe534d83e1528511f1da4c8db754391358d749f2d3d10be92
+Matching full core sources and licenses are in the STOCK.zip package.
 Stock interoperability evidence inventory: STOCK_MAIN_VERIFICATION.json.
 Four-slot release only. CD support is not included.
