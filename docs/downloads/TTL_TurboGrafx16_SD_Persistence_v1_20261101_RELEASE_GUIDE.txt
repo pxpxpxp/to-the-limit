@@ -1,3 +1,11 @@
+UPDATE 2026-11-01: OPTIONAL PAIRED PATH ONLY
+Stock Main ordinary interoperability is now software-verified. A custom Main
+is NOT required for the ordinary path. See the adjacent
+TTL_TurboGrafx16_SD_Persistence_v1_20261101_STOCK_MAIN_GUIDE.txt.
+The instructions below describe the optional enhanced companion setup;
+Saved to SD and automatic failed-write retry are companion-only features.
+Earlier mandatory-pairing statements are superseded for stock users.
+
 TO THE LIMIT — A POST-SPOOKY SURPRISE
 Paired SD Persistence v1, four slots, 2026-11-01.
 Published standalone filename TTL_TurboGrafx16_SD_Persistence_v1_20261101_RELEASE.rbf is the same bytes as TurboGrafx16_SD_Persistent_20261101.rbf inside the package.

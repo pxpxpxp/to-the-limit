@@ -1,0 +1,23 @@
+{
+  "description": "Native stock host-function/real filesystem and modeled fresh RTL verification; not hardware qualification",
+  "upstream_main": "afb917fce1f3089e3d242331ddae6456ac0da8e4",
+  "rbf_sha256": "e9877034fd94ef4502527d342d1e9bc266e41913eb7766f1740c773aa8b6b9cb",
+  "passed": true,
+  "slots": 4,
+  "bytes_per_image": 416640,
+  "actual_filesystem": true,
+  "fresh_rtl_restore": true,
+  "production_rtl_changed": false,
+  "production_Main_changed": false,
+  "hardware_tested": false,
+  "whole_Main_ARM_tested": false,
+  "stock_auto_retry_same_generation": false,
+  "stock_rejects_corrupt_crc_payload": false,
+  "evidence_sha256": {
+    "stock_main_integration.log": "73799771be67ef57b0fbcce4ae1e7562d4349bfad22f2db4be9661954bcdd53a",
+    "host_compile.log": "c64a5ace8cff8cecd4d2009cc81662d31b510e746c54dd75f301fe3533842a2e",
+    "rtl_cold_restore.log": "221c4be54cfbd761c0723f9c88bec421eda825ece5a3f02e4ecfc508173bce10",
+    "rtl_compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rtl_capture.log": "b9108ecc6cdf15add9af5899b9d8bf07845dca031394dbf7ff1d26bdab72f2d0"
+  }
+}
