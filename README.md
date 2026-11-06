@@ -8,9 +8,14 @@ Experimental turbo cores for **MiSTer FPGA**, with source, build evidence and a 
 
 | Core | Changes | Status |
 | --- | --- | --- |
+| TTL SavePoint | Four manual HuCard save slots, CPU Turbo, protocol 3 SD persistence with the companion Main | Stable track. Save/load sync and CPU Turbo verified on the preceding binary |
 | TurboGrafx-16 / PC Engine | CPU Turbo Off / +20% / +50%; Extra sprites enabled by default | Experimental RBF; owner reports +50% works; gameplay gains not measured |
 
 The website also links to Corn's community N64 94MHz+ project, based on Robert Peip's core. That is not an original To the Limit build and its binaries are not redistributed here.
+
+## TTL SavePoint
+
+[Download the RBF](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.rbf) or open the [setup and validation notes](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.md).
 
 ## TurboGrafx installation
 
