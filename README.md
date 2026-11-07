@@ -50,7 +50,7 @@ Original TurboGrafx and MiSTer framework authors retain their copyrights. The do
 
 ## Earlier build
 
-The initial `TTL_TurboGrafx16_CPU_Turbo_20261029_EXPERIMENTAL.rbf` and `TTL_TurboGrafx16_CPU_Turbo_20261029_EXPERIMENTAL_source.zip` remain available in `docs/downloads` for comparison. They require selecting Extra sprites manually.
+The initial CPU Turbo build and its matching source remain available in the [historical downloads snapshot](https://github.com/pxpxpxp/to-the-limit/tree/93312177178b0d95d6a06a96fdcb08fae489f3ab/docs/downloads) for comparison. That build requires selecting Extra sprites manually. The [current downloads](docs/downloads/README.md) contain the three builds linked on the website, with their source and supporting files.
 
 ## Download naming
 
