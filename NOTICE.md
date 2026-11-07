@@ -9,12 +9,12 @@ The matching complete source archive is distributed alongside the binary under `
 
 Local modifications: optional CPU Turbo control and its wiring, validation tests and hosted-build compatibility tooling. The Extra sprite mode is an upstream feature. A subsequent revision changes its default only.
 
-## Community N64 link
+## Community N64 credit
 
 Corn's N64 turbo work builds on Robert Peip's (FPGAzumSpass) original core:
 https://github.com/MiSTer-devel/N64_MiSTer
 
-It is independently maintained. This repository links to it without claiming authorship or redistributing its binaries.
+It is independently maintained. This repository credits it without claiming authorship or redistributing its binaries.
 
 ## Website assets
 

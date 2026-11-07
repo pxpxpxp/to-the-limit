@@ -1,6 +1,6 @@
 # TTL SavePoint
 
-Cartridge 004 for TurboGrafx-16 and PC Engine HuCards on MiSTer. Build `261106SP1` is the stable save-state track. It offers four manual slots, F5/F8 and optional CPU Turbo (+20% and +50%). Rewind has been removed.
+Cartridge 003 for TurboGrafx-16 and PC Engine HuCards on MiSTer. Build `261106SP1` is the stable save-state track. It offers four manual slots, F5/F8 and optional CPU Turbo (+20% and +50%). Rewind has been removed.
 
 ## Install and save
 
@@ -14,6 +14,6 @@ This build uses protocol 3. Earlier experimental formats use separate files. Sav
 
 ## Validation
 
-The preceding full-image build ran on the owner’s MiSTer and Sony CRT. The owner reported stable sync through manual save/load and confirmed that CPU Turbo works. SavePoint derives from that source and retains its manual snapshot format and video alignment. This RBF awaits its own physical MiSTer and SD power-cycle tests.
+THE OWNER has hardware-validated this build on their Sony PVM. The RBF also passed Quartus timing checks. This report does not establish broad game compatibility or confirm a separate SD power-cycle test.
 
 The [source ZIP](TTL_SavePoint_TurboGrafx16_20261106_source.zip) includes the corresponding core source, licenses, and build evidence. Verify the downloads with the [SHA-256 list](TTL_SavePoint_TurboGrafx16_20261106.sha256).

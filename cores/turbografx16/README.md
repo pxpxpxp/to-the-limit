@@ -1,5 +1,7 @@
 # Optional CPU Turbo — experimental build
 
+This document records the original CPU Turbo and Extra-default development used by Cartridge 001. For all current releases, including Ninja Spirit save states and TTL SavePoint, use the [download index](../../docs/downloads/README.md).
+
 This is a local modification of MiSTer-devel/TurboGrafx16_MiSTer at upstream
 commit `827d45f45799b8ab3a536510847f2108a92e81bd`. This distribution is hosted by To the Limit. Nothing was pushed upstream. The existing core's identity and game folders
 are preserved.
@@ -79,7 +81,7 @@ runner only adapts upstream's procedural bidirectional output into a separate
 tri-state driver for Icarus compatibility; it does not change controller timing.
 Use strict Verilog expression widths, as the runner does, to match Quartus.
 
-Run with GHDL 4.1 and Icarus Verilog 12, or compatible versions:
+The following test runners and their fixtures are inside the matching source archive, not this repository checkout. Extract the source ZIP and run these commands from its source root with GHDL 4.1 and Icarus Verilog 12, or compatible versions:
 
 ```sh
 python3 tests/run_cpu_turbo.py
@@ -152,11 +154,11 @@ Quartus installations may not need it. The finished build report records the
 actual tool version and results.
 
 
-## Hardware feedback and next default
+## Historical hardware feedback and Extra-default revision
 
 On 2026-10-29 the owner reported the +50% setting is working. The amount of gameplay improvement has not been measured. The new revision enables Extra sprites by default using new status bit 41 (0=Extra, 1=Normal). See [its build report](BUILD_EXTRA.md). Legacy status bit 11 is reserved and ignored, so old saved settings are not silently inverted. CPU Turbo remains default Off.
 
 
-## Current download
+## Cartridge 001 download
 
 Use `TTL_TurboGrafx16_ExtraSprites_20261029_EXPERIMENTAL.rbf` and matching `TTL_TurboGrafx16_ExtraSprites_20261029_EXPERIMENTAL_source.zip` from the website downloads directory. Both full build/timing results and SHA-256 checksums are published. The new Extra-default binary has not yet been hardware tested.
