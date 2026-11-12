@@ -6,7 +6,7 @@ This is the latest Standard build in testing, dated 261111. It adds rewind for s
 
 ## Status
 
-THE OWNER reports this exact test binary working well. Final verification remains pending. This is an experimental preview, not a fully qualified release or a guarantee of compatibility with every game, display or configuration. Keep Cartridge 003 SavePoint available if you prefer its established track.
+THE OWNER reports this exact test binary working well. Final verification and updated OSD menus following MiSTer’s template are coming. This is an experimental preview, not a fully qualified release or a guarantee of compatibility with every game, display or configuration. Keep Cartridge 003 SavePoint available if you prefer its established track.
 
 - [Test RBF](TurboGrafx16_ToTheLimit_261111_Standard_TEST.rbf)
 - [Matching source archive](TurboGrafx16_ToTheLimit_261111_Standard_TEST_source.zip)
@@ -36,7 +36,7 @@ Rewind history is temporary. Changing the rewind settings clears it. Do not rely
 
 ## Scope and feedback
 
-Save states and rewind require a supported HuCard configuration and SDRAM. **No CD or SuperGrafx save states or rewind.** Other device, cheat and configuration guards can disable the feature; this is not an all-HuCard compatibility claim. Normal CD operation is a separate matter.
+Save states and rewind require a supported HuCard configuration and SDRAM. **Rewind is available on supported HuCards. Save states and rewind are not supported for CD or SuperGrafx.** Other device, cheat and configuration guards can disable the feature; this is not an all-HuCard compatibility claim. Normal CD operation is a separate matter.
 
 Report the exact build, game, display/output, SDRAM setup, capture pace and steps to reproduce any issue in the [issue tracker](https://github.com/pxpxpxp/to-the-limit/issues). Stop testing if restoration causes corruption, instability or a lock-up; return to your known-good core and backup saves.
 
