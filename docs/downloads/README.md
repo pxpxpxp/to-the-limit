@@ -1,10 +1,12 @@
 # Current downloads
 
-These are the four builds linked on [To the Limit](https://tothelimit.monster/), with their matching source archives. Earlier downloads are preserved unchanged.
+These are the three builds linked on [To the Limit](https://tothelimit.monster/), with their matching source archives. The CPU overclock and persistent save-state builds remain available.
 
-## Cartridge 004: Standard rewind taste test
+## Cartridge 004: Latest core — Standard rewind taste test
 
-A sneaky taste test for the Turbo Club. Experimental, with final verification pending.
+A sneaky taste test for the Turbo Club. Experimental, with final verification and updated OSD menus following MiSTer’s template forthcoming.
+
+Known issue: after a core reload, save states and rewind may be unavailable even if the previous game is visible. Explicitly reload the HuCard through **Load TurboGrafx**. This is being investigated by THE OWNER.
 
 - [RBF](TurboGrafx16_ToTheLimit_261111_Standard_TEST.rbf)
 - [Matching source ZIP](TurboGrafx16_ToTheLimit_261111_Standard_TEST_source.zip)
@@ -17,11 +19,6 @@ A sneaky taste test for the Turbo Club. Experimental, with final verification pe
 - [Source ZIP](TTL_SavePoint_TurboGrafx16_20261106_source.zip)
 - [SHA-256 checksums](TTL_SavePoint_TurboGrafx16_20261106.sha256)
 - [Setup and validation notes](TTL_SavePoint_TurboGrafx16_20261106.md)
-
-## Cartridge 002: Ninja Spirit in-memory save states
-
-- [RBF](TTL_TurboGrafx16_NinjaSpirit_SaveStates_20261029_EXPERIMENTAL.rbf)
-- [Source ZIP](TTL_TurboGrafx16_NinjaSpirit_SaveStates_20261029_EXPERIMENTAL_source.zip)
 
 ## Cartridge 001: Extra Sprites and CPU Turbo
 

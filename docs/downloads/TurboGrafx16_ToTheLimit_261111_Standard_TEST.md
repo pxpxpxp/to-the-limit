@@ -16,6 +16,12 @@ THE OWNER reports this exact test binary working well. Final verification and up
 
 The archive accompanies this exact test RBF. Source correspondence does not establish final timing, CDC, hardware or full-system qualification. It is not a later root-menu revision or a quarter-second capture build. The archive includes source, project files and test code, but not a complete runnable regression harness.
 
+## Known issue: core reload
+
+Reloading the core may reopen the previous game with save states and rewind unavailable. **Workaround: open Load TurboGrafx and explicitly reload your HuCard ROM**, even if the game is already visible. This is being investigated by THE OWNER.
+
+This workaround applies to the current test binary; it is not a claim that the issue is fixed. Final verification and the OSD menu update are still forthcoming.
+
 ## Try rewind
 
 1. Back up your usual RBF, battery saves and save states. Keep separate test progress and retain your known-good core.
