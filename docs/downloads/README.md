@@ -1,6 +1,15 @@
 # Current downloads
 
-These are the three builds linked on [To the Limit](https://tothelimit.monster/), with their matching source archives. The files are unchanged by this cleanup.
+These are the four builds linked on [To the Limit](https://tothelimit.monster/), with their matching source archives. Earlier downloads are preserved unchanged.
+
+## Cartridge 004: Standard rewind taste test
+
+A sneaky taste test for the Turbo Club. Experimental, with final verification pending.
+
+- [RBF](TurboGrafx16_ToTheLimit_261111_Standard_TEST.rbf)
+- [Matching source ZIP](TurboGrafx16_ToTheLimit_261111_Standard_TEST_source.zip)
+- [SHA-256 checksums](TurboGrafx16_ToTheLimit_261111_Standard_TEST.sha256)
+- [Setup and test notes](TurboGrafx16_ToTheLimit_261111_Standard_TEST.md)
 
 ## Cartridge 003: TTL SavePoint
 
