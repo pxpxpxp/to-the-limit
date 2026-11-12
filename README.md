@@ -9,10 +9,10 @@ Experimental MiSTer FPGA cores, matching source archives, and a pixel-art downlo
 
 | Cartridge | Build | Features and validation |
 | --- | --- | --- |
-| 004 | [Standard rewind taste test](docs/downloads/TurboGrafx16_ToTheLimit_261111_Standard_TEST.md) | Rewind for supported HuCards, four SD-backed manual save slots and CPU Turbo. The owner reports this exact test binary working well; final verification remains pending. |
+| 004 | [Standard rewind taste test](docs/downloads/TurboGrafx16_ToTheLimit_261111_Standard_TEST.md) | Rewind for supported HuCards, four SD-backed manual save slots and CPU Turbo. THE OWNER reports this exact test binary working well; final verification remains pending. |
 | 003 | [TTL SavePoint](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.md) | Four manual HuCard save slots, SD persistence through the standard MiSTer interface, and CPU Turbo. THE OWNER has hardware-validated this build on their Sony PVM. The RBF also passed Quartus timing checks. |
 | 002 | Ninja Spirit in-memory save states | One temporary slot, saved with F5 and restored with F8; CPU Turbo and Extra sprites. THE OWNER reported the original Ninja Spirit build working. No SD persistence or broad game/CD compatibility claim. |
-| 001 | Extra Sprites and CPU Turbo | CPU Turbo Off / +20% / +50%, with Extra sprites enabled by default. The initial CPU-turbo binary was owner-tested at +50%; this Extra-default revision still awaits its own hardware testing. |
+| 001 | Extra Sprites and CPU Turbo | CPU Turbo Off / +20% / +50%, with Extra sprites enabled by default. The initial CPU-turbo binary was tested by THE OWNER at +50%; this Extra-default revision still awaits its own hardware testing. |
 
 Start with the [SavePoint setup and validation notes](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.md) for the stable track, or try the [Cartridge 004 rewind taste test](docs/downloads/TurboGrafx16_ToTheLimit_261111_Standard_TEST.md). The [download index](docs/downloads/README.md) pairs each RBF with its source and available checksums.
 
