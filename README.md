@@ -9,11 +9,11 @@ Experimental MiSTer FPGA cores, matching source archives, and a pixel-art downlo
 
 | Cartridge | Build | Features and validation |
 | --- | --- | --- |
-| 004 · latest | [Standard rewind taste test](docs/downloads/TurboGrafx16_ToTheLimit_261111_Standard_TEST.md) | Rewind for supported HuCards, four SD-backed manual save slots and CPU Turbo. THE OWNER reports this exact test binary working well; final verification and updated OSD menus following MiSTer’s template are coming. |
+| 004 · latest | [Standard rewind taste test](docs/downloads/TurboGrafx16_20261112_OC_SS_Rewind.md) | Rewind for supported HuCards, four SD-backed manual save slots and CPU Turbo. THE OWNER hardware-tested the preceding MainMenu build. This About-label recompile passed all 40 global timing checks across eight corners and awaits its own hardware test. Save-state and rewind controls are now in the main menu. |
 | 003 | [TTL SavePoint](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.md) | Four manual HuCard save slots, SD persistence through the standard MiSTer interface, and CPU Turbo. THE OWNER has hardware-validated this build on their Sony PVM. The RBF also passed Quartus timing checks. |
 | 001 | Extra Sprites and CPU Turbo | CPU Turbo Off / +20% / +50%, with Extra sprites enabled by default. The initial CPU-turbo binary was tested by THE OWNER at +50%; this Extra-default revision still awaits its own hardware testing. |
 
-The latest core is the [Cartridge 004 rewind taste test](docs/downloads/TurboGrafx16_ToTheLimit_261111_Standard_TEST.md). [SavePoint](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.md) remains available for persistent save states, alongside the original CPU overclock core. The [download index](docs/downloads/README.md) pairs each RBF with its source and available checksums.
+The latest core is the [Cartridge 004 rewind taste test](docs/downloads/TurboGrafx16_20261112_OC_SS_Rewind.md). [SavePoint](docs/downloads/TTL_SavePoint_TurboGrafx16_20261106.md) remains available for persistent save states, alongside the original CPU overclock core. The [download index](docs/downloads/README.md) pairs each RBF with its source and available checksums.
 
 **Known issue in Cartridge 004:** reloading the core may reopen the previous game with save states and rewind unavailable. Open **Load TurboGrafx** and explicitly reload the HuCard ROM, even if the game is already visible. This is being investigated by THE OWNER.
 

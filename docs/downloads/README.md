@@ -4,14 +4,14 @@ These are the three builds linked on [To the Limit](https://tothelimit.monster/)
 
 ## Cartridge 004: Latest core — Standard rewind taste test
 
-A sneaky taste test for the Turbo Club. Experimental, with final verification and updated OSD menus following MiSTer’s template forthcoming.
+A sneaky taste test for the Turbo Club. THE OWNER hardware-tested the preceding MainMenu build. This About-label recompile passed all 40 global timing checks across eight corners and awaits its own hardware test. Save-state and rewind controls are now in the main menu.
 
 Known issue: after a core reload, save states and rewind may be unavailable even if the previous game is visible. Explicitly reload the HuCard through **Load TurboGrafx**. This is being investigated by THE OWNER.
 
-- [RBF](TurboGrafx16_ToTheLimit_261111_Standard_TEST.rbf)
-- [Matching source ZIP](TurboGrafx16_ToTheLimit_261111_Standard_TEST_source.zip)
-- [SHA-256 checksums](TurboGrafx16_ToTheLimit_261111_Standard_TEST.sha256)
-- [Setup and test notes](TurboGrafx16_ToTheLimit_261111_Standard_TEST.md)
+- [RBF](TurboGrafx16_20261112_OC_SS_Rewind.rbf)
+- [Matching source ZIP](TurboGrafx16_20261112_OC_SS_Rewind_source.zip)
+- [SHA-256 checksums](TurboGrafx16_20261112_OC_SS_Rewind.sha256)
+- [Setup and test notes](TurboGrafx16_20261112_OC_SS_Rewind.md)
 
 ## Cartridge 003: TTL SavePoint
 
